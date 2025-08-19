@@ -3150,17 +3150,99 @@
             display: none !important;
         }
 
-        /* 🔥【新增】在日记界面中隐藏主屏幕状态栏 */
+        /* 🔥【新增】在所有应用界面中隐藏主屏幕状态栏 */
+        body:has(#worldbook-screen[style*="flex"]) #status-bar,
+        body:has(#anniversary-screen[style*="flex"]) #status-bar,
+        body:has(#shopping-screen[style*="flex"]) #status-bar,
+        body:has(#shopping-cart-screen[style*="flex"]) #status-bar,
+        body:has(#messages-screen[style*="flex"]) #status-bar,
+        body:has(#sms-chat-screen[style*="flex"]) #status-bar,
+        body:has(#sms-chat-settings-screen[style*="flex"]) #status-bar,
+        body:has(#chat-screen[style*="flex"]) #status-bar,
+        body:has(#publish-moment-screen[style*="flex"]) #status-bar,
+        body:has(#forum-screen[style*="flex"]) #status-bar,
+        body:has(#create-forum-screen[style*="flex"]) #status-bar,
+        body:has(#forum-view-screen[style*="flex"]) #status-bar,
+        body:has(#post-view-screen[style*="flex"]) #status-bar,
+        body:has(#forum-profile-screen[style*="flex"]) #status-bar,
+        body:has(#gomoku-game-screen[style*="flex"]) #status-bar,
         body:has(#diary-screen[style*="flex"]) #status-bar,
-        body:has(#diary-settings-screen[style*="flex"]) #status-bar {
+        body:has(#diary-settings-screen[style*="flex"]) #status-bar,
+        body:has(#memory-viewer-screen[style*="flex"]) #status-bar,
+        body:has(#worldbook-form-screen[style*="flex"]) #status-bar,
+        body:has(#api-chat-settings-screen[style*="flex"]) #status-bar,
+        body:has(#character-form-screen[style*="flex"]) #status-bar,
+        body:has(#persona-form-screen[style*="flex"]) #status-bar,
+        body:has(#emoji-library-screen[style*="flex"]) #status-bar,
+        body:has(#api-chat-screen[style*="flex"]) #status-bar,
+        body:has(#browser-screen[style*="flex"]) #status-bar,
+        body:has(#settings-screen[style*="flex"]) #status-bar,
+        body:has(#data-management-screen[style*="flex"]) #status-bar,
+        body:has(#emergency-recovery-screen[style*="flex"]) #status-bar,
+        body:has(#about-screen[style*="flex"]) #status-bar,
+        body:has(#display-screen[style*="flex"]) #status-bar,
+        body:has(#screen-size-screen[style*="flex"]) #status-bar,
+        body:has(#appearance-screen[style*="flex"]) #status-bar,
+        body:has(#sound-settings-screen[style*="flex"]) #status-bar,
+        body:has(#theme-screen[style*="flex"]) #status-bar,
+        body:has(#custom-theme-screen[style*="flex"]) #status-bar,
+        body:has(#wallpaper-screen[style*="flex"]) #status-bar,
+        body:has(#wifi-screen[style*="flex"]) #status-bar,
+        body:has(#api-settings-screen[style*="flex"]) #status-bar,
+        body:has(#character-phone-screen[style*="flex"]) #status-bar,
+        body:has(#character-phone-chat-screen[style*="flex"]) #status-bar,
+        body:has(#character-phone-note-screen[style*="flex"]) #status-bar,
+        body:has(#character-phone-photo-screen[style*="flex"]) #status-bar {
             display: none !important;
         }
 
-        /* 备用方案：当通话界面显示时隐藏主屏幕状态栏 */
+        /* 备用方案：当应用界面显示时隐藏主屏幕状态栏 */
         .wallpaper:has(~ #phone-call-screen[style*="flex"]) #status-bar,
         .wallpaper:has(~ #incoming-call-screen[style*="flex"]) #status-bar,
         .wallpaper:has(~ #video-call-screen[style*="flex"]) #status-bar,
-        .wallpaper:has(~ #incoming-video-call-screen[style*="flex"]) #status-bar {
+        .wallpaper:has(~ #incoming-video-call-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #messages-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #sms-chat-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #sms-chat-settings-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #api-chat-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #settings-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #worldbook-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #anniversary-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #shopping-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #shopping-cart-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #chat-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #publish-moment-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #forum-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #create-forum-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #forum-view-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #post-view-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #forum-profile-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #gomoku-game-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #diary-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #diary-settings-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #memory-viewer-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #worldbook-form-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #api-chat-settings-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #character-form-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #persona-form-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #emoji-library-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #browser-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #data-management-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #emergency-recovery-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #about-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #display-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #screen-size-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #appearance-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #sound-settings-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #theme-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #custom-theme-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #wallpaper-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #wifi-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #api-settings-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #character-phone-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #character-phone-chat-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #character-phone-note-screen[style*="flex"]) #status-bar,
+        .wallpaper:has(~ #character-phone-photo-screen[style*="flex"]) #status-bar {
             display: none !important;
         }
 
@@ -3218,6 +3300,7 @@
             font-weight: 600;
             display: flex;
             align-items: center;
+            font-size: 14px !important; /* 确保主屏幕状态栏时间字体大小正确 */
         }
         
         #status-bar-time::after {
@@ -3780,6 +3863,13 @@
             color: black;
         }
         
+        /* 顶部容器 - 包含状态栏和应用栏 */
+        .app-top-container {
+            position: relative;
+            z-index: 15;
+            flex-shrink: 0;
+        }
+
         /* 应用界面状态栏 */
         .app-status-bar {
             position: absolute;
@@ -3799,13 +3889,14 @@
             border-bottom: none;
         }
         
-        .app-status-time {
+        .app-screen .app-status-time {
             font-weight: 600;
             display: flex;
             align-items: center;
+            font-size: 14px;
         }
-        
-        .app-status-time::after {
+
+        .app-screen .app-status-time::after {
             content: var(--status-icon, "🐾");
             margin-left: 4px;
             font-size: 12px;
@@ -3917,9 +4008,11 @@
             padding-top: 45px;
             height: 80px;
             box-sizing: border-box;
-            background-color: var(--theme-header-bg); 
-            backdrop-filter: var(--theme-header-backdrop); 
-            -webkit-backdrop-filter: var(--theme-header-backdrop); 
+            background-color: transparent; /* 改为透明 */
+            /* 注释掉原来的背景样式 */
+            /* background-color: var(--theme-header-bg); */
+            /* backdrop-filter: var(--theme-header-backdrop); */
+            /* -webkit-backdrop-filter: var(--theme-header-backdrop); */
             border-bottom: 1px solid var(--color-border); 
             display: flex; 
             justify-content: center; 
@@ -19158,6 +19251,25 @@ textarea.call-text-input {
             flex-direction: column;
         }
 
+        /* 线下模式状态栏 */
+        .offline-status-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px 24px 6px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+            z-index: 1000;
+            font-size: 14px;
+            box-sizing: border-box;
+            pointer-events: none;
+            background: transparent;
+            border-bottom: none;
+        }
+
         /* --- 论坛悬浮按钮组 --- */
         .floating-action-buttons {
             position: absolute;
@@ -27669,9 +27781,9 @@ textarea.call-text-input {
             opacity: 0 !important;
         }
 
-        /* 自定义按钮样式 */
+        /* 🔥【修复】自定义按钮样式 - 只在有对应标记时才应用 */
         /* 返回按钮 */
-        .custom-theme-applied .back-btn {
+        .custom-theme-applied[data-has-custom-back-btn="true"] .back-btn {
             background-image: var(--custom-back-btn);
             background-size: contain;
             background-position: center;
@@ -27680,55 +27792,52 @@ textarea.call-text-input {
         }
 
         /* 线下模式按钮 */
-        .custom-theme-applied #offline-mode-icon {
+        .custom-theme-applied[data-has-custom-offline-btn="true"] #offline-mode-icon {
             background-image: var(--custom-offline-btn);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-        }
-
-        .custom-theme-applied #offline-mode-icon:not([style*="background-image"]) {
             color: transparent;
         }
 
         /* 聊天设置按钮 */
-        .custom-theme-applied .header-actions .action-btn:last-child {
+        .custom-theme-applied[data-has-custom-settings-btn="true"] .header-actions .action-btn:last-child {
             background-image: var(--custom-settings-btn);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
         }
 
-        .custom-theme-applied .header-actions .action-btn:last-child i {
+        .custom-theme-applied[data-has-custom-settings-btn="true"] .header-actions .action-btn:last-child i {
             opacity: 0;
         }
 
         /* 功能区展开按钮 */
-        .custom-theme-applied .toggle-tools-btn {
+        .custom-theme-applied[data-has-custom-expand-btn="true"] .toggle-tools-btn {
             background-image: var(--custom-expand-btn);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
         }
 
-        .custom-theme-applied .toggle-tools-btn i {
+        .custom-theme-applied[data-has-custom-expand-btn="true"] .toggle-tools-btn i {
             opacity: 0;
         }
 
         /* 续写按钮 */
-        .custom-theme-applied .chat-action-btn[onclick*="triggerSmartReply"] {
+        .custom-theme-applied[data-has-custom-continue-btn="true"] .chat-action-btn[onclick*="triggerSmartReply"] {
             background-image: var(--custom-continue-btn);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
         }
 
-        .custom-theme-applied .chat-action-btn[onclick*="triggerSmartReply"] i {
+        .custom-theme-applied[data-has-custom-continue-btn="true"] .chat-action-btn[onclick*="triggerSmartReply"] i {
             opacity: 0;
         }
 
         /* 发送消息按钮 */
-        .custom-theme-applied .send-button {
+        .custom-theme-applied[data-has-custom-send-btn="true"] .send-button {
             background-image: var(--custom-send-btn);
             background-size: contain;
             background-position: center;
@@ -27737,25 +27846,227 @@ textarea.call-text-input {
         }
 
         /* 全局样式应用 */
-        /* 顶部应用栏（包含状态栏和标题栏） */
-        .custom-theme-applied .app-status-bar,
-        .custom-theme-applied .app-header {
+        /* 🔥【修复】顶部应用栏容器 - 应用到所有应用界面 */
+        .custom-theme-applied[data-has-custom-global-top-app-bar="true"] .app-top-container {
             background-image: var(--custom-global-top-app-bar);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
 
-        /* 底部应用栏 */
-        .custom-theme-applied .app-bottom-bar {
+        /* 🔥【修复】确保状态栏和标题栏透明，让容器背景显示 */
+        .custom-theme-applied[data-has-custom-global-top-app-bar="true"] .app-top-container .app-status-bar,
+        .custom-theme-applied[data-has-custom-global-top-app-bar="true"] .app-top-container .app-header {
+            background: transparent !important;
+            background-color: transparent !important;
+            background-image: none !important;
+        }
+
+        /* 🔥【修复】只排除API聊天界面 */
+        .custom-theme-applied[data-has-custom-global-top-app-bar="true"] #api-chat-screen .app-top-container {
+            background-image: none !important;
+            background: var(--theme-header-bg) !important;
+            background-color: var(--theme-header-bg) !important;
+        }
+
+        /* 🔥【修复】底部应用栏 - 应用到所有底部标签栏 */
+        .custom-theme-applied[data-has-custom-global-bottom-app-bar="true"] .chat-tabs,
+        .custom-theme-applied[data-has-custom-global-bottom-app-bar="true"] .worldbook-tabs,
+        .custom-theme-applied[data-has-custom-global-bottom-app-bar="true"] .anniversary-tabs,
+        .custom-theme-applied[data-has-custom-global-bottom-app-bar="true"] .app-bottom-bar {
             background-image: var(--custom-global-bottom-app-bar);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
 
-        /* 返回按钮 */
-        .custom-theme-applied .back-button {
+        /* 🔥【新增】图片上传选择模态框样式 */
+        .upload-choice-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .upload-choice-option {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .upload-choice-option:hover {
+            border-color: #007AFF;
+            background-color: #f8f9ff;
+        }
+
+        .upload-choice-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #007AFF;
+            color: white;
+            border-radius: 10px;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        .upload-choice-text {
+            flex: 1;
+        }
+
+        .upload-choice-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .upload-choice-desc {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .url-input-container {
+            padding: 10px 0;
+        }
+
+        /* 🔥【修复】URL输入框样式优化 */
+        #image-url-input {
+            width: 100%;
+            max-width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e8e8e8;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.4;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+            word-break: break-all;
+            overflow-wrap: break-word;
+            resize: none;
+        }
+
+        #image-url-input:focus {
+            outline: none;
+            border-color: #007AFF;
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+        }
+
+        #image-url-input::placeholder {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .url-tips {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .url-tips ul {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .url-tips li {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .url-preview {
+            margin-top: 15px;
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        /* 🔥【新增】URL输入模态框特定样式 */
+        #url-input-modal .modal-content {
+            max-width: 450px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        #url-input-modal .modal-body {
+            padding: 20px;
+        }
+
+        #url-input-modal .form-group {
+            margin-bottom: 20px;
+        }
+
+        #url-input-modal .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 480px) {
+            #url-input-modal .modal-content {
+                width: 95%;
+                max-height: 90vh;
+            }
+
+            #url-input-modal .modal-body {
+                padding: 16px;
+            }
+
+            #image-url-input {
+                font-size: 16px; /* 防止iOS缩放 */
+            }
+        }
+
+        /* 🔥【新增】图片上传选择模态框样式 */
+        #image-upload-choice-modal .modal-content {
+            max-width: 400px;
+            width: 90%;
+        }
+
+        #image-upload-choice-modal .modal-body {
+            padding: 20px;
+        }
+
+        /* 🔥【新增】已设置项状态指示器 */
+        .theme-item-status {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 24px;
+            height: 24px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            z-index: 2;
+        }
+
+        .custom-theme-item {
+            position: relative;
+        }
+
+        .theme-item-configured {
+            border-color: #4CAF50 !important;
+            background-color: #f8fff8 !important;
+        }
+
+        /* 🔥【修复】返回按钮 - 排除API聊天界面和短信聊天界面 */
+        .custom-theme-applied[data-has-custom-global-back-button="true"] .back-button {
             background-image: var(--custom-global-back-button);
             background-size: cover;
             background-position: center;
@@ -27763,9 +28074,23 @@ textarea.call-text-input {
             color: transparent;
         }
 
-        /* 添加按钮 */
-        .custom-theme-applied .add-button,
-        .custom-theme-applied .action-btn {
+        /* 🔥【修复】只排除API聊天界面的全局返回按钮样式 */
+        .custom-theme-applied[data-has-custom-global-back-button="true"] #api-chat-screen .back-button {
+            background-image: none !important;
+            background: none !important;
+            background-color: transparent !important;
+            color: var(--text-primary) !important;
+        }
+
+        /* 🔥【修复】添加按钮 - 只应用到顶部标题栏的添加/新建按钮（+号） */
+        .custom-theme-applied[data-has-custom-global-add-button="true"] .chat-header-actions .add-btn,
+        .custom-theme-applied[data-has-custom-global-add-button="true"] .persona-header-actions .add-persona-btn-header,
+        .custom-theme-applied[data-has-custom-global-add-button="true"] .emoji-library-header-actions .create-library-btn-header,
+        .custom-theme-applied[data-has-custom-global-add-button="true"] .messages-header-actions .add-message-btn,
+        .custom-theme-applied[data-has-custom-global-add-button="true"] .header-actions .action-btn[title*="添加"],
+        .custom-theme-applied[data-has-custom-global-add-button="true"] .header-actions .action-btn[title*="新建"],
+        .custom-theme-applied[data-has-custom-global-add-button="true"] .header-actions .action-btn[onclick*="showMakeNewsModal"],
+        .custom-theme-applied[data-has-custom-global-add-button="true"] .header-actions .action-btn[onclick*="showOfflinePresetSettings"] {
             background-image: var(--custom-global-add-button);
             background-size: cover;
             background-position: center;
@@ -27773,12 +28098,35 @@ textarea.call-text-input {
             color: transparent;
         }
 
-        /* 全局应用背景 */
-        .custom-theme-applied .app-screen {
+        /* 🔥【修复】排除聊天界面的添加按钮样式 */
+        .custom-theme-applied[data-has-custom-global-add-button="true"] #api-chat-screen .chat-header-actions .add-btn,
+        .custom-theme-applied[data-has-custom-global-add-button="true"] #api-chat-screen .header-actions .action-btn,
+        .custom-theme-applied[data-has-custom-global-add-button="true"] #sms-chat-screen .messages-header-actions .add-message-btn,
+        .custom-theme-applied[data-has-custom-global-add-button="true"] #sms-chat-screen .header-actions .action-btn {
+            background-image: none !important;
+            background: none !important;
+            background-color: transparent !important;
+            color: var(--text-primary) !important;
+        }
+
+        /* 🔥【修复】全局应用背景 - 应用到各app页面的内容区域（顶部和底部应用栏之间的区域） */
+        .custom-theme-applied[data-has-custom-global-bg="true"] .app-content:not(#api-chat-screen .app-content):not(#sms-chat-screen .app-content),
+        .custom-theme-applied[data-has-custom-global-bg="true"] .main-content:not(#api-chat-screen .main-content):not(#sms-chat-screen .main-content),
+        .custom-theme-applied[data-has-custom-global-bg="true"] .content-area:not(#api-chat-screen .content-area):not(#sms-chat-screen .content-area),
+        .custom-theme-applied[data-has-custom-global-bg="true"] .app-body:not(#api-chat-screen .app-body):not(#sms-chat-screen .app-body),
+        .custom-theme-applied[data-has-custom-global-bg="true"] .page-content:not(#api-chat-screen .page-content):not(#sms-chat-screen .page-content) {
             background-image: var(--custom-global-bg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+        }
+
+        /* 🔥【修复】排除聊天界面的全局背景样式 - 但不影响聊天界面本身的背景 */
+        .custom-theme-applied[data-has-custom-global-bg="true"] #api-chat-screen .app-content,
+        .custom-theme-applied[data-has-custom-global-bg="true"] #sms-chat-screen .app-content {
+            background-image: none !important;
+            background: transparent !important;
+            background-color: transparent !important;
         }
 
         /* 确保自定义按钮在有背景图时正确显示 */
@@ -27788,7 +28136,10 @@ textarea.call-text-input {
         .custom-theme-applied .toggle-tools-btn[style*="background-image"],
         .custom-theme-applied .chat-action-btn[style*="background-image"],
         .custom-theme-applied .send-button[style*="background-image"] {
-            /* 自定义背景图片时的额外样式 */
+            /* 确保自定义背景图片正确显示 */
+            background-color: transparent;
+            border: none;
+            outline: none;
         }
 
         /* 🎨【新增】自定义主题界面隐藏dock栏 */
@@ -27868,4 +28219,103 @@ textarea.call-text-input {
             border-color: #FF9500;
             background: rgba(255, 149, 0, 0.05);
             color: #FF9500;
+        }
+
+        /* 🔥【新增】主题管理界面样式 */
+        .theme-management-info {
+            background: #f0f8ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 16px;
+            text-align: center;
+            color: #0066cc;
+        }
+
+        .theme-chat-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .theme-chat-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            background: white;
+            transition: all 0.2s ease;
+        }
+
+        .theme-chat-item:hover {
+            background: #f8f9fa;
+            border-color: #007AFF;
+        }
+
+        .theme-chat-info {
+            flex: 1;
+        }
+
+        .theme-chat-name {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 4px;
+        }
+
+        .theme-chat-type {
+            font-size: 12px;
+            color: #666;
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .theme-chat-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .theme-chat-btn {
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .preview-theme-btn {
+            background: #007AFF;
+            color: white;
+        }
+
+        .preview-theme-btn:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .remove-theme-btn {
+            background: #ff4757;
+            color: white;
+        }
+
+        .remove-theme-btn:hover {
+            background: #ff3742;
+            transform: scale(1.05);
+        }
+
+        .theme-action-btn.manage-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .theme-action-btn.manage-btn:hover {
+            background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+            transform: translateY(-2px);
         }

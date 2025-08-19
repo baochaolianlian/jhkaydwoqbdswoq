@@ -744,29 +744,31 @@
             </div>
 
             <div id="worldbook-screen" class="app-screen">
-                <div class="app-status-bar">
-                    <div class="app-status-time"></div>
-                    <div class="app-status-right">
-                        <div class="app-signal-icon signal-icon">
-                            <div class="signal-row">
-                                <div class="signal-bar"></div>
-                                <div class="signal-bar"></div>
-                                <div class="signal-bar"></div>
-                                <div class="signal-bar"></div>
+                <div class="app-top-container">
+                    <div class="app-status-bar">
+                        <div class="app-status-time"></div>
+                        <div class="app-status-right">
+                            <div class="app-signal-icon signal-icon">
+                                <div class="signal-row">
+                                    <div class="signal-bar"></div>
+                                    <div class="signal-bar"></div>
+                                    <div class="signal-bar"></div>
+                                    <div class="signal-bar"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="app-battery-container">
-                            <div class="app-battery-icon">
-                                <div class="app-battery-level"></div>
+                            <div class="app-battery-container">
+                                <div class="app-battery-icon">
+                                    <div class="app-battery-level"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="app-header">
-                    <button class="back-button" onclick="hideApp('worldbook-screen')">‹</button>
-                    <div class="app-title">世界书</div>
-                    <div class="add-worldbook-btn worldbook-add-btn" onclick="onWorldbookAddClick()">
-                        <i class="fas fa-plus"></i>
+                    <div class="app-header">
+                        <button class="back-button" onclick="hideApp('worldbook-screen')">‹</button>
+                        <div class="app-title">世界书</div>
+                        <div class="add-worldbook-btn worldbook-add-btn" onclick="onWorldbookAddClick()">
+                            <i class="fas fa-plus"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -889,30 +891,32 @@
 
                 <!-- 纪念日界面 -->
                 <div id="anniversary-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon">
-                                    <div class="app-battery-level"></div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="hideApp('anniversary-screen')">‹</button>
-                        <div class="app-title">纪念日</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="hideApp('anniversary-screen')">‹</button>
+                            <div class="app-title">纪念日</div>
                         <div class="add-anniversary-btn" onclick="showAnniversaryForm()">
                             <i class="fas fa-plus"></i>
                         </div>
+                    </div>
                     </div>
                     <div class="app-content">
                         <!-- 纪念日内容区域 -->
@@ -1145,27 +1149,28 @@
 
                 <!-- 短信界面 -->
                 <div id="messages-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon">
-                                    <div class="app-battery-level"></div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="hideApp('messages-screen')">‹</button>
-                        <div class="app-title">短信</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="hideApp('messages-screen')">‹</button>
+                            <div class="app-title">短信</div>
                         <div class="messages-header-actions" id="sms-normal-actions">
                             <div class="sms-manage-btn" onclick="showSMSManageOptions()" title="管理短信">
                                 <i class="fas fa-ellipsis-h"></i>
@@ -1184,6 +1189,7 @@
                             </button>
                         </div>
                     </div>
+                    </div>
                     <div class="app-content">
                         <div id="messages-list" class="messages-list">
                             <!-- 短信列表将通过JS动态生成 -->
@@ -1198,26 +1204,27 @@
 
                 <!-- 短信聊天界面 -->
                 <div id="sms-chat-screen" class="app-screen" style="display: none;">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon">
-                                    <div class="app-battery-level"></div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="hideSMSChat()">‹</button>
+                        <div class="app-header">
+                            <button class="back-button" onclick="hideSMSChat()">‹</button>
                         <div class="sms-chat-header-center">
                             <div class="sms-chat-avatar" id="sms-chat-avatar">
                                 <i class="fas fa-user"></i>
@@ -1238,6 +1245,7 @@
                                 <span>删除</span>
                             </button>
                         </div>
+                    </div>
                     </div>
                     <div class="app-content sms-chat-content">
                         <div id="sms-messages-container" class="sms-messages-container">
@@ -1386,27 +1394,29 @@
 
                 <!-- 短信聊天设置界面 -->
                 <div id="sms-chat-settings-screen" class="app-screen" style="display: none;">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon">
-                                    <div class="app-battery-level"></div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="hideSMSChatSettings()">‹</button>
-                        <div class="app-title">聊天设置</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="hideSMSChatSettings()">‹</button>
+                            <div class="app-title">聊天设置</div>
+                        </div>
                     </div>
                     <div class="app-content sms-settings-content">
                         <div class="setting-group">
@@ -1449,27 +1459,28 @@
 
                 <!-- 聊天界面 -->
                 <div id="chat-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon">
-                                    <div class="app-battery-level"></div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="hideApp('chat-screen')">‹</button>
-                        <div class="app-title">💬</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="hideApp('chat-screen')">‹</button>
+                            <div class="app-title">💬</div>
                         <div class="chat-header-actions">
                             <div id="group-manage-btn" class="header-action-btn" onclick="enterGroupManageMode()" title="管理分组">
                                 <i class="fas fa-cog"></i>
@@ -1481,6 +1492,7 @@
                                 <i class="fas fa-plus"></i>
                             </div>
                         </div>
+                    </div>
                     </div>
 
                     <div class="app-content" id="chat-content">
@@ -1767,28 +1779,30 @@
 
                 <!-- 论坛界面 -->
                 <div id="forum-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon"><div class="app-battery-level"></div></div>
                                 </div>
                             </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon"><div class="app-battery-level"></div></div>
-                            </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="hideApp('forum-screen')">‹</button>
-                        <div class="app-title">论坛</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="hideApp('forum-screen')">‹</button>
+                            <div class="app-title">论坛</div>
                         <div class="add-forum-btn" onclick="showCreateForumScreen()">
                             <i class="fas fa-plus"></i>
                         </div>
+                    </div>
                     </div>
                     <div class="app-content">
                         <div id="forum-archive-list" class="forum-archive-list">
@@ -1835,25 +1849,26 @@
 
                 <!-- 帖子列表界面 -->
                 <div id="forum-view-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon"><div class="app-battery-level"></div></div>
                                 </div>
                             </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon"><div class="app-battery-level"></div></div>
-                            </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToForumArchives()">‹</button>
-                        <div class="app-title" id="forum-view-title">论坛</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToForumArchives()">‹</button>
+                            <div class="app-title" id="forum-view-title">论坛</div>
                         <div class="header-actions">
                             <span class="action-btn" onclick="showMakeNewsModal()" title="搞个大新闻">
                                 <i class="fas fa-pencil-alt"></i>
@@ -1862,6 +1877,7 @@
                                 <i class="fas fa-user"></i>
                             </span>
                         </div>
+                    </div>
                     </div>
                     <div class="app-content">
                         <div id="forum-posts-list" class="post-list">
@@ -2078,25 +2094,26 @@
 
                 <!-- 帖子详情和回复界面 -->
                 <div id="post-view-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon"><div class="app-battery-level"></div></div>
                                 </div>
                             </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon"><div class="app-battery-level"></div></div>
-                            </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToForum()">‹ </button>
-                        <div class="app-title">帖子详情</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToForum()">‹ </button>
+                            <div class="app-title">帖子详情</div>
                         <div class="header-actions">
                             <span id="favorite-btn" class="action-btn" onclick="toggleFavoritePost()" title="收藏">
                                 <i class="far fa-star"></i>
@@ -2105,6 +2122,7 @@
                                 <i class="fas fa-share-square"></i>
                             </span>
                         </div>
+                    </div>
                     </div>
                     <div class="app-content" id="post-view-content">
                     </div>
@@ -2119,25 +2137,26 @@
 
                 <!-- 论坛个人主页/收藏夹 -->
                 <div id="forum-profile-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon"><div class="app-battery-level"></div></div>
                                 </div>
                             </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon"><div class="app-battery-level"></div></div>
-                            </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToCurrentForum()">‹</button>
-                        <div class="app-title">个人主页</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToCurrentForum()">‹</button>
+                            <div class="app-title">个人主页</div>
                         <div class="header-actions">
                             <span class="action-btn multi-select-toggle-btn" onclick="toggleMultiSelectMode()" title="多选删除" id="multi-select-btn">
                                 <i class="fas fa-trash"></i>
@@ -2146,6 +2165,7 @@
                                 <i class="fas fa-vote-yea"></i>
                             </span>
                         </div>
+                    </div>
                     </div>
                     <div class="app-content" style="padding: 0;">
                         <div class="profile-tabs">
@@ -3217,28 +3237,29 @@
 
                 <!-- 记忆查看器界面 -->
                 <div id="memory-viewer-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon">
-                                    <div class="app-battery-level"></div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="hideApp('memory-viewer-screen')">‹</button>
+                        <div class="app-header">
+                            <button class="back-button" onclick="hideApp('memory-viewer-screen')">‹</button>
 
-                        <div class="app-title">记忆查看器</div>
+                            <div class="app-title">记忆查看器</div>
                         <div class="header-actions">
                             <!-- 右侧放3个按钮：设置、刷新、清理错误记录 -->
                             <button class="header-action-btn" onclick="showMemorySettings()" title="记忆设置">
@@ -3251,6 +3272,7 @@
                                 <i class="fas fa-tools"></i>
                             </button>
                         </div>
+                    </div>
                     </div>
                     <div class="app-content">
                         <!-- 角色选择器 -->
@@ -4241,28 +4263,29 @@
 
                 <!-- API聊天界面 -->
                 <div id="api-chat-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div id="ai-heartrate-display" style="display: none;">♥️ 72 bpm</div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div id="ai-heartrate-display" style="display: none;">♥️ 72 bpm</div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon">
-                                    <div class="app-battery-level"></div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="header">
+                        <div class="header">
                         <div class="default-controls">
-                            <button class="back-btn" onclick="backToChatApp()">‹</button>
+                            <button class="back-btn" onclick="backToChatApp().catch(e => console.error('返回聊天应用失败:', e))">‹</button>
                             <span class="header-title" id="api-chat-title">角色聊天</span>
                             <div class="header-actions">
                                 <span class="action-btn" onclick="toggleOfflineMode()" id="offline-mode-btn" title="切换线下剧情模式">
@@ -4281,6 +4304,7 @@
                         <span id="selection-forward-btn" onclick="showForwardTargetModal()" title="转发">
                             <i class="fas fa-share"></i>
                         </span>
+                        </div>
                     </div>
                     <div class="app-content padding-none-flex">
 
@@ -4426,6 +4450,24 @@
 
                     <!-- 线下剧情模式覆盖层 -->
                     <div id="offline-mode-overlay" class="offline-mode-overlay" style="display: none;">
+                        <div class="offline-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="offline-mode-header">
                             <button class="back-btn" onclick="exitOfflineMode()">‹</button>
                             <span class="header-title" id="offline-mode-title">线下剧情模式</span>
@@ -4550,27 +4592,29 @@
 
                 <!-- 设置应用 -->
                 <div id="settings-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon">
-                                    <div class="app-battery-level"></div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="hideApp('settings-screen')">‹</button>
-                        <div class="app-title">设置</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="hideApp('settings-screen')">‹</button>
+                            <div class="app-title">设置</div>
+                        </div>
                     </div>
                     <div class="app-content">
                         <div class="settings-item" onclick="showApp('api-settings-screen')">
@@ -4663,16 +4707,17 @@
 
                 <!-- 数据管理 -->
                 <div id="data-management-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                </div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                             </div>
                             <div class="app-battery-container">
                                 <div class="app-battery-icon">
@@ -4681,9 +4726,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('data-management-screen')">‹</button>
-                        <div class="app-title">数据管理</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('data-management-screen')">‹</button>
+                            <div class="app-title">数据管理</div>
+                        </div>
                     </div>
                     <div class="app-content">
                         <!-- 存储空间使用情况 -->
@@ -4899,13 +4945,14 @@
 
                 <!-- 🚨 紧急恢复界面 -->
                 <div class="app-screen" id="emergency-recovery-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
                                 </div>
@@ -4917,9 +4964,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('emergency-recovery-screen')">‹</button>
-                        <div class="app-title" style="color: #ff4444;">🚨 紧急恢复</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('emergency-recovery-screen')">‹</button>
+                            <div class="app-title" style="color: #ff4444;">🚨 紧急恢复</div>
+                        </div>
                     </div>
                     <div class="app-content">
                         <div style="padding: 20px; color: #333;">
@@ -5034,11 +5082,12 @@
 
                 <!-- 关于我们 -->
                 <div id="about-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
                                     <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
@@ -5052,9 +5101,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('about-screen')">‹</button>
-                        <div class="app-title">关于我们</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('about-screen')">‹</button>
+                            <div class="app-title">关于我们</div>
+                        </div>
                     </div>
                     <div class="app-content">
                         <div class="about-content">
@@ -5284,11 +5334,12 @@
 
                 <!-- 字体与字号设置 -->
                 <div id="display-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
                                     <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
@@ -5302,9 +5353,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('display-screen')">‹</button>
-                        <div class="app-title">字体与字号</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('display-screen')">‹</button>
+                            <div class="app-title">字体与字号</div>
+                        </div>
                     </div>
                     <div class="app-content">
                         <div class="font-size-preview">
@@ -5472,17 +5524,18 @@
 
                 <!-- 外观设置 -->
                 <div id="appearance-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
                             <div class="app-battery-container">
                                 <div class="app-battery-icon">
                                     <div class="app-battery-level"></div>
@@ -5490,9 +5543,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('appearance-screen')">‹</button>
-                        <div class="app-title">外观设置</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('appearance-screen')">‹</button>
+                            <div class="app-title">外观设置</div>
+                        </div>
                     </div>
                     <div class="app-content">
                         <div class="settings-item">
@@ -5567,17 +5621,18 @@
 
                 <!-- 音效设置界面 -->
                 <div id="sound-settings-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
                             <div class="app-battery-container">
                                 <div class="app-battery-icon">
                                     <div class="app-battery-level"></div>
@@ -5585,9 +5640,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('sound-settings-screen')">‹</button>
-                        <div class="app-title">音效设置</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('sound-settings-screen')">‹</button>
+                            <div class="app-title">音效设置</div>
+                        </div>
                     </div>
                     <div class="app-content">
                         <div class="form-container">
@@ -5719,30 +5775,32 @@
 
                 <!-- 主题设置界面 -->
                 <div id="theme-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
-                                <div class="app-battery-icon">
-                                    <div class="app-battery-level"></div>
+                                <div class="app-battery-container">
+                                    <div class="app-battery-icon">
+                                        <div class="app-battery-level"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('theme-screen')">‹</button>
-                        <div class="app-title">主题设置</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('theme-screen')">‹</button>
+                            <div class="app-title">主题设置</div>
+                        </div>
                     </div>
                     <div class="app-content">
-                        <div class="theme-option" onclick="changeTheme('default')">
+                        <div class="theme-option" onclick="changeTheme('default').catch(e => console.error('切换主题失败:', e))">
                             <div class="theme-preview theme-preview-simple">
                                 <div class="theme-preview-header"></div>
                                 <div class="theme-preview-content"></div>
@@ -5753,7 +5811,7 @@
                             </div>
                         </div>
 
-                        <div class="theme-option" onclick="changeTheme('cute')">
+                        <div class="theme-option" onclick="changeTheme('cute').catch(e => console.error('切换主题失败:', e))">
                             <div class="theme-preview theme-preview-cute">
                                 <div class="theme-preview-header"></div>
                                 <div class="theme-preview-content"></div>
@@ -5764,7 +5822,7 @@
                             </div>
                         </div>
 
-                        <div class="theme-option" onclick="changeTheme('dark')">
+                        <div class="theme-option" onclick="changeTheme('dark').catch(e => console.error('切换主题失败:', e))">
                             <div class="theme-preview theme-preview-dark">
                                 <div class="theme-preview-header"></div>
                                 <div class="theme-preview-content"></div>
@@ -5793,11 +5851,12 @@
 
                 <!-- 自定义主题界面 -->
                 <div id="custom-theme-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
                                     <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
@@ -5811,9 +5870,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('custom-theme-screen')">‹</button>
-                        <div class="app-title">自定义主题</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('custom-theme-screen')">‹</button>
+                            <div class="app-title">自定义主题</div>
+                        </div>
                     </div>
                     <div class="app-content custom-theme-content">
                         <!-- 主题分类选项卡 -->
@@ -5997,36 +6057,42 @@
                             <div class="custom-theme-section">
                                 <div class="section-title">
                                     <i class="fas fa-window-maximize"></i>
-                                    <span>应用栏样式</span>
+                                    <span>应用栏样式（排除聊天界面）</span>
                                 </div>
 
-                                <div class="custom-theme-item" onclick="uploadGlobalTopAppBar()">
+                                <div class="custom-theme-item" onclick="uploadGlobalTopAppBar()" id="global-top-app-bar-item">
                                     <div class="theme-item-left">
                                         <div class="theme-item-icon">
                                             <i class="fas fa-window-maximize"></i>
                                         </div>
                                         <div class="theme-item-info">
                                             <div class="theme-item-title">顶部应用栏</div>
-                                            <div class="theme-item-desc">包含状态栏和标题栏的整体背景</div>
+                                            <div class="theme-item-desc">应用到除API聊天和短信聊天以外的所有应用页顶部</div>
                                         </div>
                                     </div>
                                     <div class="theme-item-preview" id="global-top-app-bar-preview">
                                         <i class="fas fa-plus"></i>
                                     </div>
+                                    <div class="theme-item-status" id="global-top-app-bar-status" style="display: none;">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
                                 </div>
 
-                                <div class="custom-theme-item" onclick="uploadGlobalBottomAppBar()">
+                                <div class="custom-theme-item" onclick="uploadGlobalBottomAppBar()" id="global-bottom-app-bar-item">
                                     <div class="theme-item-left">
                                         <div class="theme-item-icon">
                                             <i class="fas fa-window-minimize"></i>
                                         </div>
                                         <div class="theme-item-info">
                                             <div class="theme-item-title">底部应用栏</div>
-                                            <div class="theme-item-desc">全局应用底部应用栏背景</div>
+                                            <div class="theme-item-desc">应用到除API聊天和短信聊天以外的所有应用页底部</div>
                                         </div>
                                     </div>
                                     <div class="theme-item-preview" id="global-bottom-app-bar-preview">
                                         <i class="fas fa-plus"></i>
+                                    </div>
+                                    <div class="theme-item-status" id="global-bottom-app-bar-status" style="display: none;">
+                                        <i class="fas fa-check-circle"></i>
                                     </div>
                                 </div>
                             </div>
@@ -6035,21 +6101,24 @@
                             <div class="custom-theme-section">
                                 <div class="section-title">
                                     <i class="fas fa-mouse-pointer"></i>
-                                    <span>标题栏按钮</span>
+                                    <span>标题栏按钮（排除聊天界面）</span>
                                 </div>
 
-                                <div class="custom-theme-item" onclick="uploadGlobalBackButton()">
+                                <div class="custom-theme-item" onclick="uploadGlobalBackButton()" id="global-back-button-item">
                                     <div class="theme-item-left">
                                         <div class="theme-item-icon">
                                             <i class="fas fa-arrow-left"></i>
                                         </div>
                                         <div class="theme-item-info">
                                             <div class="theme-item-title">返回按钮</div>
-                                            <div class="theme-item-desc">全局应用标题栏返回按钮样式</div>
+                                            <div class="theme-item-desc">应用到除API聊天和短信聊天以外的返回按钮</div>
                                         </div>
                                     </div>
                                     <div class="theme-item-preview" id="global-back-button-preview">
                                         <i class="fas fa-plus"></i>
+                                    </div>
+                                    <div class="theme-item-status" id="global-back-button-status" style="display: none;">
+                                        <i class="fas fa-check-circle"></i>
                                     </div>
                                 </div>
 
@@ -6060,7 +6129,7 @@
                                         </div>
                                         <div class="theme-item-info">
                                             <div class="theme-item-title">添加按钮</div>
-                                            <div class="theme-item-desc">全局应用标题栏添加按钮样式</div>
+                                            <div class="theme-item-desc">应用到除API聊天和短信聊天以外的添加按钮</div>
                                         </div>
                                     </div>
                                     <div class="theme-item-preview" id="global-add-button-preview">
@@ -6073,7 +6142,7 @@
                             <div class="custom-theme-section">
                                 <div class="section-title">
                                     <i class="fas fa-image"></i>
-                                    <span>应用背景</span>
+                                    <span>应用背景（排除聊天界面）</span>
                                 </div>
 
                                 <div class="custom-theme-item" onclick="uploadGlobalBackground()">
@@ -6083,7 +6152,7 @@
                                         </div>
                                         <div class="theme-item-info">
                                             <div class="theme-item-title">全局应用背景</div>
-                                            <div class="theme-item-desc">所有应用界面的背景图案</div>
+                                            <div class="theme-item-desc">应用到除API聊天和短信聊天以外的所有应用界面</div>
                                         </div>
                                     </div>
                                     <div class="theme-item-preview" id="global-bg-preview">
@@ -6092,33 +6161,16 @@
                                 </div>
                             </div>
 
-                            <!-- 应用图标自定义 -->
-                            <div class="custom-theme-section">
-                                <div class="section-title">
-                                    <i class="fas fa-th-large"></i>
-                                    <span>应用图标</span>
-                                </div>
 
-                                <div class="custom-theme-item" onclick="customizeAppIcons()">
-                                    <div class="theme-item-left">
-                                        <div class="theme-item-icon">
-                                            <i class="fas fa-icons"></i>
-                                        </div>
-                                        <div class="theme-item-info">
-                                            <div class="theme-item-title">底部应用栏图标</div>
-                                            <div class="theme-item-desc">自定义Dock栏应用图标</div>
-                                        </div>
-                                    </div>
-                                    <div class="theme-item-action">
-                                        <i class="fas fa-chevron-right"></i>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                         <!-- 底部操作按钮 -->
                         <div class="custom-theme-actions">
-                            <button class="theme-action-btn reset-btn" onclick="resetCustomTheme()">
+                            <button class="theme-action-btn manage-btn" onclick="showThemeManagement().catch(e => console.error('显示主题管理失败:', e))">
+                                <i class="fas fa-cog"></i>
+                                <span>管理</span>
+                            </button>
+                            <button class="theme-action-btn reset-btn" onclick="resetCustomTheme().catch(e => console.error('重置主题失败:', e))">
                                 <i class="fas fa-undo"></i>
                                 <span>重置</span>
                             </button>
@@ -6126,7 +6178,7 @@
                                 <i class="fas fa-eye"></i>
                                 <span>预览</span>
                             </button>
-                            <button class="theme-action-btn apply-btn" onclick="applyCustomTheme()">
+                            <button class="theme-action-btn apply-btn" onclick="applyCustomTheme().catch(e => console.error('应用主题失败:', e))">
                                 <i class="fas fa-check"></i>
                                 <span>应用</span>
                             </button>
@@ -6136,13 +6188,14 @@
 
                 <!-- 壁纸设置 -->
                 <div id="wallpaper-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
                                     <div class="signal-bar"></div>
                                 </div>
@@ -6154,9 +6207,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('wallpaper-screen')">‹</button>
-                        <div class="app-title">壁纸</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('wallpaper-screen')">‹</button>
+                            <div class="app-title">壁纸</div>
+                        </div>
                     </div>
                     <div class="app-content">
                         <div class="settings-item" onclick="showWallpaperPicker()">
@@ -6240,27 +6294,29 @@
 
                 <!-- API设置界面 -->
                 <div id="api-settings-screen" class="app-screen">
-                    <div class="app-status-bar">
-                        <div class="app-status-time"></div>
-                        <div class="app-status-right">
-                            <div class="app-signal-icon signal-icon">
-                                <div class="signal-row">
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
-                                    <div class="signal-bar"></div>
+                    <div class="app-top-container">
+                        <div class="app-status-bar">
+                            <div class="app-status-time"></div>
+                            <div class="app-status-right">
+                                <div class="app-signal-icon signal-icon">
+                                    <div class="signal-row">
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                        <div class="signal-bar"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="app-battery-container">
+                                <div class="app-battery-container">
                                 <div class="app-battery-icon">
                                     <div class="app-battery-level"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="app-header">
-                        <button class="back-button" onclick="backToSettings('api-settings-screen')">‹</button>
-                        <div class="app-title">API设置</div>
+                        <div class="app-header">
+                            <button class="back-button" onclick="backToSettings('api-settings-screen')">‹</button>
+                            <div class="app-title">API设置</div>
+                        </div>
                     </div>
                     <div class="app-content">
                         <div class="form-container" style="color: #000000;">
@@ -6722,6 +6778,71 @@
                         <div class="modal-footer">
                             <button class="modal-button modal-secondary" onclick="hideModal('wallpaper-picker-modal')">取消</button>
                             <button class="modal-button modal-primary" onclick="applyWallpaperSelection()">应用</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 图片上传选择模态框 -->
+                <div class="modal" id="image-upload-choice-modal">
+                    <div class="modal-content" style="max-width: 400px;">
+                        <div class="modal-header">
+                            <div class="modal-title" id="image-upload-choice-title">选择图片来源</div>
+                            <button class="modal-close" onclick="hideModal('image-upload-choice-modal')">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="upload-choice-container">
+                                <div class="upload-choice-option" onclick="chooseLocalUpload()">
+                                    <div class="upload-choice-icon">
+                                        <i class="fas fa-upload"></i>
+                                    </div>
+                                    <div class="upload-choice-text">
+                                        <div class="upload-choice-title">本地上传</div>
+                                        <div class="upload-choice-desc">从设备选择图片文件</div>
+                                    </div>
+                                </div>
+                                <div class="upload-choice-option" onclick="chooseUrlUpload()">
+                                    <div class="upload-choice-icon">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                    <div class="upload-choice-text">
+                                        <div class="upload-choice-title">在线图床</div>
+                                        <div class="upload-choice-desc">输入图片URL地址</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- URL输入模态框 -->
+                <div class="modal" id="url-input-modal">
+                    <div class="modal-content" style="max-width: 500px;">
+                        <div class="modal-header">
+                            <div class="modal-title" id="url-input-title">输入图片URL</div>
+                            <button class="modal-close" onclick="hideModal('url-input-modal')">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="url-input-container">
+                                <label for="image-url-input">图片URL地址：</label>
+                                <input type="url" id="image-url-input" placeholder="https://example.com/image.jpg" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+                                <div class="url-tips">
+                                    <p><strong>支持的图床：</strong></p>
+                                    <ul>
+                                        <li>PostImg: https://i.postimg.cc/...</li>
+                                        <li>Catbox: https://files.catbox.moe/...</li>
+                                        <li>ImgBB: https://i.ibb.co/...</li>
+                                        <li>Imgur: https://i.imgur.com/...</li>
+                                        <li>其他支持直链的图床</li>
+                                    </ul>
+                                </div>
+                                <div class="url-preview" id="url-preview" style="display: none;">
+                                    <img id="url-preview-img" style="max-width: 100%; max-height: 200px; border-radius: 5px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="modal-button modal-secondary" onclick="hideModal('url-input-modal')">取消</button>
+                            <button class="modal-button modal-primary" onclick="confirmUrlUpload()">确认</button>
                         </div>
                     </div>
                 </div>
@@ -7705,206 +7826,7 @@
 
 
 
-        // 🔥【版本 38】音效系统
-        db.version(38).stores({
-            // --- 完整复制版本37的所有内容 ---
-            // 基础数据表
-            characters: '&id, name, groupId',
-            contacts: '++id, characterId',
-            chatMessages: '&id, characterId, timestamp',
 
-            // 用户面具系统
-            personas: '&id, name',
-
-            // 表情包系统 - 添加isPersonal字段区分个人表情包和库表情包
-            customEmojis: '&id, name, category, isPersonal',
-            recentEmojis: '&id, lastUsed',
-
-            // 世界书系统
-            worldbooks: '&id, name, isGlobal',
-            worldbookEntries: '&id, worldbookId, keyword',
-
-            // 群聊系统
-            characterGroups: '&id, name, order',
-            groupChats: '&id, name',
-            groupChatMessages: '&id, groupId, timestamp',
-            groupChatMembers: '&id, groupId, characterId',
-
-            // 动态系统
-            moments: '&id, authorId, timestamp',
-            momentLikes: '[momentId+authorId], momentId, authorId',
-            momentComments: '&id, momentId, authorId, timestamp',
-
-            // 记忆系统
-            workingMemory: '&id, characterId, timestamp, content, context',
-            episodicMemory: '&id, characterId, date, summary, timestamp, context',
-            episodicMemories: '&id, characterId, fact, importance, timestamp, category, contextId',
-            memorySummaries: '&id, characterId, date, summary, timestamp, context',
-            memoryEvents: '&id, characterIds, eventType, timestamp, context, eventData, importance',
-            coreMemory: '&id, characterId, category, content, timestamp',
-            coreMemories: '&id, characterId, fact, importance, timestamp, type, category, contextId',
-            crossAppTimeline: '&id, characterId, appType, action, timestamp, context, messageId',
-
-            // 拉黑和好友系统
-            blacklist: '&id, blockerId, blockedId, timestamp, reason',
-            blockedCharacters: '&id, characterId, blockedBy, timestamp',
-            friendRequests: '&id, fromId, toId, timestamp, status, type, message',
-            characterStatus: '&id, characterId, status, activity, location, lastUpdate',
-
-            // 日记系统
-            characterDiaries: '&id, characterId, date, content, timestamp, weather',
-
-            // 线下模式系统
-            offlineHistoryRecords: '&id, characterId, timestamp, summary, messages',
-            offlineUISettings: '&id, characterId, settings, timestamp',
-            offlinePresets: '&id, name, content, timestamp',
-
-            // 音乐播放器系统
-            musicPlaylist: '&id, title, artist, album, duration, url, coverImage, lyrics, addedTime, isLocalFile',
-            musicCovers: '&id, songId, imageData, timestamp',
-
-            // 设置和配置
-            apiSettings: '&id',
-            globalSettings: '&id',
-            wallpapers: '&id, name',
-            appIcons: '&id, appId',
-            chatSettings: '&id, chatId',
-
-            // 心声系统
-            innerThoughts: '&id, messageId, characterId, content, timestamp',
-
-            // 论坛功能相关表
-            forums: '++id, name',
-            forumPosts: '++id, forumId, timestamp, isUserPost',
-            forumReplies: '++id, postId, timestamp',
-            forumFavorites: '++id, [userId+postId], userId, postId',
-
-            // 评论点赞表
-            replyLikes: '++id, [userId+replyId], userId, replyId, timestamp',
-
-            // 论坛扩展表
-            forumPostImages: '++id, postId, imageUrl',
-            forumMountedWorldbooks: '++id, &[forumId+worldbookId], forumId',
-
-            // 短信应用独立数据表
-            smsContacts: '++id, characterId, personaId, createdAt',
-
-            // 短信消息表
-            smsMessages: '&id, characterId, timestamp, content, isUser, isImage, imageUrl, fileName',
-
-            // 纪念日和约定系统 - 🔥【新增】添加userQuote字段支持用户语录
-            anniversaries: '&id, name, date, type, yearly, characterId, createdBy, characterQuote, userQuote, isShared, isPinned, backgroundImage, userAvatar, countType',
-            appointments: '&id, name, date, time, type, description, completed, priority, reminder, characterId, createdBy, characterQuote, userQuote, isShared, isPinned, backgroundImage, userAvatar, countType',
-
-            // 动态可见性、位置信息和提醒功能
-            momentVisibility: '++id, momentId, visibility, visibleGroups, timestamp',
-            momentLocations: '++id, momentId, locationName, latitude, longitude, timestamp',
-            momentMentions: '++id, momentId, mentionedCharacterId, timestamp, isRead',
-
-            // 足迹功能
-            characterFootprints: '&id, characterId, date, data, timestamp, lastUpdateTime, isComplete',
-            footprintActivities: '++id, footprintId, time, activity, location, type, mood, timestamp',
-
-            // 表情包库功能
-            emojiLibraries: '&id, name, description, createdAt, updatedAt',
-            emojiLibraryItems: '++id, &[libraryId+emojiId], libraryId, emojiId, addedAt',
-
-            // 🔥【新增】日记设置表 - 将localStorage的日记设置迁移到Dexie
-            diarySettings: '&id, characterId, settingName, settingValue, timestamp',
-
-            // 🔥【新增】音效系统表
-            soundSettings: '&id, soundType, sourceType, sourceUrl, enabled, timestamp'
-        }).upgrade(async trans => {
-            // 为现有的表情包添加isPersonal字段，默认为true（个人表情包）
-            await trans.customEmojis.toCollection().modify(emoji => {
-                if (emoji.isPersonal === undefined) {
-                    emoji.isPersonal = true;
-                }
-            });
-
-            // 🔥【新增】迁移localStorage的日记设置到Dexie
-            try {
-                const diarySettingsToMigrate = [
-                    'font-family', 'font-size', 'font-weight', 'line-height',
-                    'paragraph-spacing', 'text-align', 'content-width',
-                    'content-padding', 'paper-type', 'custom-background', 'text-decoration'
-                ];
-
-                // 获取所有角色ID
-                const allCharacters = await trans.characters.toArray();
-
-                for (const character of allCharacters) {
-                    for (const settingName of diarySettingsToMigrate) {
-                        const key = `diary-${character.id}-${settingName}`;
-                        const value = localStorage.getItem(key);
-                        if (value) {
-                            await trans.diarySettings.add({
-                                id: `${character.id}_${settingName}`,
-                                characterId: character.id,
-                                settingName: settingName,
-                                settingValue: value,
-                                timestamp: Date.now()
-                            });
-                            // 迁移后删除localStorage数据
-                            localStorage.removeItem(key);
-                        }
-                    }
-                }
-
-                // 迁移全局日记设置（没有角色ID的）
-                for (const settingName of diarySettingsToMigrate) {
-                    const key = `diary-${settingName}`;
-                    const value = localStorage.getItem(key);
-                    if (value) {
-                        await trans.diarySettings.add({
-                            id: `global_${settingName}`,
-                            characterId: null,
-                            settingName: settingName,
-                            settingValue: value,
-                            timestamp: Date.now()
-                        });
-                        // 迁移后删除localStorage数据
-                        localStorage.removeItem(key);
-                    }
-                }
-
-                console.log('✅ 日记设置已从localStorage迁移到Dexie数据库');
-            } catch (error) {
-                console.error('❌ 日记设置迁移失败:', error);
-            }
-
-            // 🔥【新增】音效系统初始化
-            try {
-                // 从localStorage迁移音效设置（如果存在）
-                const soundTypes = ['messageReceived', 'messageSent', 'notification', 'outgoingCall', 'incomingCall'];
-
-                for (const soundType of soundTypes) {
-                    const key = `soundSettings_${soundType}`;
-                    const value = localStorage.getItem(key);
-                    if (value) {
-                        try {
-                            const soundData = JSON.parse(value);
-                            await trans.soundSettings.add({
-                                id: soundType,
-                                soundType: soundType,
-                                sourceType: soundData.sourceType || 'url',
-                                sourceUrl: soundData.sourceUrl || '',
-                                enabled: soundData.enabled !== false,
-                                timestamp: Date.now()
-                            });
-                            // 迁移后删除localStorage数据
-                            localStorage.removeItem(key);
-                        } catch (parseError) {
-                            console.warn(`音效设置解析失败 (${soundType}):`, parseError);
-                        }
-                    }
-                }
-
-                console.log('✅ 音效系统已初始化');
-            } catch (error) {
-                console.error('❌ 音效系统初始化失败:', error);
-            }
-        });
 
         // 全局变量
         let characters = [];
@@ -8832,9 +8754,9 @@
             }
         }
 
-        // 🔥【版本 39】角色专属音效系统
-        db.version(39).stores({
-            // --- 完整复制版本38的所有内容 ---
+        // 🔥【版本 40】自定义主题系统迁移到Dexie
+        db.version(40).stores({
+            // --- 完整复制版本39的所有内容 ---
             // 基础数据表
             characters: '&id, name, groupId',
             contacts: '++id, characterId',
@@ -8942,9 +8864,114 @@
             // 🔥【新增】音效系统表
             soundSettings: '&id, soundType, sourceType, sourceUrl, enabled, timestamp',
 
-            // --- 然后，在末尾追加新表 ---
             // 🔥【新增】角色专属音效表
-            characterSounds: '++id, characterId, soundType, sourceType, sourceUrl, enabled, timestamp'
+            characterSounds: '++id, characterId, soundType, sourceType, sourceUrl, enabled, timestamp',
+
+            // --- 然后，在末尾追加新表 ---
+            // 🔥【新增】自定义主题系统表
+            globalThemes: '&id, themeType, themeData, timestamp',
+            chatThemes: '++id, chatId, themeData, timestamp',
+            themeSettings: '&id, settingName, settingValue, timestamp'
+        }).upgrade(async trans => {
+            // 🔥【新增】迁移localStorage的自定义主题数据到Dexie
+            try {
+                console.log('🎨 开始迁移自定义主题数据到Dexie数据库...');
+
+                // 1. 迁移全局自定义主题数据
+                const globalCustomTheme = localStorage.getItem('globalCustomTheme');
+                if (globalCustomTheme) {
+                    try {
+                        const globalThemeData = JSON.parse(globalCustomTheme);
+                        await trans.globalThemes.add({
+                            id: 'global',
+                            themeType: 'global',
+                            themeData: globalThemeData,
+                            timestamp: Date.now()
+                        });
+                        console.log('✅ 全局自定义主题数据已迁移');
+                        // 迁移后删除localStorage数据
+                        localStorage.removeItem('globalCustomTheme');
+                    } catch (parseError) {
+                        console.warn('全局主题数据解析失败:', parseError);
+                    }
+                }
+
+                // 2. 迁移聊天自定义主题数据
+                let migratedChatThemes = 0;
+                const allCharacters = await trans.characters.toArray();
+                const allGroupChats = await trans.groupChats.toArray();
+
+                // 迁移角色聊天主题
+                for (const character of allCharacters) {
+                    const themeKey = `customTheme_${character.id}`;
+                    const themeData = localStorage.getItem(themeKey);
+                    if (themeData) {
+                        try {
+                            const parsedThemeData = JSON.parse(themeData);
+                            await trans.chatThemes.add({
+                                chatId: character.id,
+                                themeData: parsedThemeData,
+                                timestamp: Date.now()
+                            });
+                            migratedChatThemes++;
+                            // 迁移后删除localStorage数据
+                            localStorage.removeItem(themeKey);
+                        } catch (parseError) {
+                            console.warn(`角色主题数据解析失败 (${character.id}):`, parseError);
+                        }
+                    }
+                }
+
+                // 迁移群聊主题
+                for (const group of allGroupChats) {
+                    const themeKey = `customTheme_${group.id}`;
+                    const themeData = localStorage.getItem(themeKey);
+                    if (themeData) {
+                        try {
+                            const parsedThemeData = JSON.parse(themeData);
+                            await trans.chatThemes.add({
+                                chatId: group.id,
+                                themeData: parsedThemeData,
+                                timestamp: Date.now()
+                            });
+                            migratedChatThemes++;
+                            // 迁移后删除localStorage数据
+                            localStorage.removeItem(themeKey);
+                        } catch (parseError) {
+                            console.warn(`群聊主题数据解析失败 (${group.id}):`, parseError);
+                        }
+                    }
+                }
+
+                if (migratedChatThemes > 0) {
+                    console.log(`✅ 已迁移 ${migratedChatThemes} 个聊天自定义主题`);
+                }
+
+                // 3. 迁移主题设置
+                const selectedTheme = localStorage.getItem('selectedTheme');
+                if (selectedTheme) {
+                    await trans.themeSettings.add({
+                        id: 'selectedTheme',
+                        settingName: 'selectedTheme',
+                        settingValue: selectedTheme,
+                        timestamp: Date.now()
+                    });
+                    console.log(`✅ 主题设置已迁移: ${selectedTheme}`);
+                    // 迁移后删除localStorage数据
+                    localStorage.removeItem('selectedTheme');
+                }
+
+                // 4. 清理旧的主题数据（如果存在）
+                const oldCustomThemeData = localStorage.getItem('customThemeData');
+                if (oldCustomThemeData) {
+                    console.log('🧹 清理旧的主题数据');
+                    localStorage.removeItem('customThemeData');
+                }
+
+                console.log('✅ 自定义主题数据迁移完成');
+            } catch (error) {
+                console.error('❌ 自定义主题数据迁移失败:', error);
+            }
         });
         let selectedGroupMembers = []; // 群聊成员选择
         let currentWorldbookTab = 'global';
@@ -9235,7 +9262,7 @@
             // 加载其他设置（包括需要数据库的壁纸设置）
             await loadWallpaper();
             await loadAppIcons();
-            loadSavedTheme();
+            await loadSavedTheme();
             await loadWorldbooks();
 
             await loadPersonas();
@@ -9642,14 +9669,9 @@
             if (homeGrid) homeGrid.style.display = 'none';
             if (dockBar) dockBar.style.display = 'none';
 
-            // 🔥【修复】根据应用类型决定是否隐藏主屏幕状态栏
-            const callScreens = ['phone-call-screen', 'incoming-call-screen', 'video-call-screen', 'incoming-video-call-screen'];
+            // 🔥【修复】在所有应用界面中隐藏主屏幕状态栏，避免重复显示
             if (mainStatusBar) {
-                if (callScreens.includes(appId)) {
-                    mainStatusBar.style.display = 'none';
-                } else {
-                    mainStatusBar.style.display = 'flex';
-                }
+                mainStatusBar.style.display = 'none';
             }
 
             // 显示目标界面
@@ -9744,18 +9766,10 @@
                 // 🔥【修复】恢复主屏幕状态栏显示
                 if (mainStatusBar) mainStatusBar.style.display = 'flex';
             } else {
-                // 🔥【新增】如果还有其他应用显示，检查是否需要隐藏主屏幕状态栏
-                const callScreens = ['phone-call-screen', 'incoming-call-screen', 'video-call-screen', 'incoming-video-call-screen'];
-                const hasCallScreen = Array.from(allApps).some(app =>
-                    callScreens.includes(app.id) && (app.style.display === 'flex' || app.style.display === 'block')
-                );
+                // 🔥【修复】如果还有其他应用显示，隐藏主屏幕状态栏避免重复
                 const mainStatusBar = document.getElementById('status-bar');
                 if (mainStatusBar) {
-                    if (hasCallScreen) {
-                        mainStatusBar.style.display = 'none';
-                    } else {
-                        mainStatusBar.style.display = 'flex';
-                    }
+                    mainStatusBar.style.display = 'none';
                 }
             }
         }
@@ -23459,6 +23473,9 @@ async function startChat(character) {
     // 🔥【新增】应用自定义CSS
     applyCustomBubbleCSS();
 
+    // 🔥【修改】检查并应用当前聊天窗口的自定义主题 - 使用async
+    applyCustomThemeStyles().catch(e => console.error('应用聊天主题失败:', e));
+
             // 🔥【移除】不再在角色切换时重新初始化后台系统
             // 后台定时器应该是全局的，在页面加载时设置一次即可
 
@@ -23483,8 +23500,8 @@ async function startChat(character) {
             showApp('api-chat-screen');
         }
 
-        // 从聊天界面返回到聊天应用
-        function backToChatApp() {
+        // 🔥【修改】从聊天界面返回到聊天应用 - 改为async支持Dexie
+        async function backToChatApp() {
             // 🔥【修复】在退出聊天时标记消息为已读
             if (currentChatCharacter) {
                 markAsRead(currentChatCharacter.id);
@@ -23502,6 +23519,19 @@ async function startChat(character) {
             const chatScreen = document.getElementById('api-chat-screen');
             if (chatScreen) {
                 chatScreen.classList.remove('group-chat');
+            }
+
+            // 🔥【修复】退出聊天时只清除聊天主题样式，保留全局主题样式
+            clearCustomThemeStyles();
+            // 🔥【修改】只有在没有使用系统主题时才重新应用全局主题样式 - 使用Dexie
+            try {
+                const themeSettingRecord = await db.themeSettings.get('selectedTheme');
+                const currentTheme = themeSettingRecord ? themeSettingRecord.settingValue : null;
+                if (!currentTheme || currentTheme === 'custom') {
+                    await applyGlobalCustomTheme();
+                }
+            } catch (error) {
+                console.error('❌ 应用全局主题失败:', error);
             }
 
             // 🔥【修复】不要清除全局后台定时器，它们应该持续运行
@@ -31123,9 +31153,14 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             console.log('电池显示已设置为固定100%电量（满电）');
         }
 
-        // 主题切换功能
-        function changeTheme(themeName) {
+        // 🔥【修改】主题切换功能 - 改为async支持Dexie
+        async function changeTheme(themeName) {
             const body = document.body;
+
+            // 🔥【修复】切换主题时清除自定义主题样式
+            clearCustomThemeStyles();
+            clearGlobalCustomTheme();
+            body.classList.remove('custom-theme-applied');
 
             // 移除之前的主题
             body.removeAttribute('data-theme');
@@ -31135,8 +31170,17 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 body.setAttribute('data-theme', themeName);
             }
 
-            // 保存主题设置
-            localStorage.setItem('selectedTheme', themeName);
+            // 🔥【修改】保存主题设置到Dexie
+            try {
+                await db.themeSettings.put({
+                    id: 'selectedTheme',
+                    settingName: 'selectedTheme',
+                    settingValue: themeName,
+                    timestamp: Date.now()
+                });
+            } catch (error) {
+                console.error('❌ 保存主题设置失败:', error);
+            }
 
             // 给用户反馈
             const themeNames = {
@@ -31170,6 +31214,10 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             selectedChats: []
         };
 
+        // 🔥【新增】图片上传选择相关变量
+        let currentUploadType = null; // 当前上传类型
+        let currentUploadCallback = null; // 当前上传回调函数
+
         let currentButtonType = null; // 当前正在上传的按钮类型
 
         // 切换自定义主题选项卡
@@ -31198,43 +31246,300 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
 
         // 上传聊天界面顶部背景
         function uploadChatTopBackground() {
-            document.getElementById('chat-top-bg-input').click();
+            showImageUploadChoice('chat-top-bg', '选择聊天顶部背景来源');
         }
 
         // 上传聊天界面底部背景
         function uploadChatBottomBackground() {
-            document.getElementById('chat-bottom-bg-input').click();
+            showImageUploadChoice('chat-bottom-bg', '选择聊天底部背景来源');
         }
 
         // 上传按钮图标
         function uploadButtonIcon(buttonType) {
             currentButtonType = buttonType;
-            document.getElementById('button-icon-input').click();
+            const buttonNames = {
+                back: '返回按钮',
+                offline: '线下模式按钮',
+                settings: '聊天设置按钮',
+                expand: '功能区展开按钮',
+                continue: '续写按钮',
+                send: '发送消息按钮'
+            };
+            showImageUploadChoice(`button-${buttonType}`, `选择${buttonNames[buttonType]}样式来源`);
+        }
+
+        // 🔥【新增】显示图片上传选择模态框
+        function showImageUploadChoice(uploadType, title, callback) {
+            currentUploadType = uploadType;
+            currentUploadCallback = callback;
+
+            document.getElementById('image-upload-choice-title').textContent = title || '选择图片来源';
+            showModal('image-upload-choice-modal');
+        }
+
+        // 🔥【新增】选择本地上传
+        function chooseLocalUpload() {
+            hideModal('image-upload-choice-modal');
+
+            // 根据上传类型触发对应的文件选择器
+            switch(currentUploadType) {
+                case 'global-top-app-bar':
+                    document.getElementById('global-top-app-bar-input').click();
+                    break;
+                case 'global-bottom-app-bar':
+                    document.getElementById('global-bottom-app-bar-input').click();
+                    break;
+                case 'global-back-button':
+                    document.getElementById('global-back-button-input').click();
+                    break;
+                case 'global-add-button':
+                    document.getElementById('global-add-button-input').click();
+                    break;
+                case 'global-bg':
+                    document.getElementById('global-bg-input').click();
+                    break;
+                case 'chat-top-bg':
+                    document.getElementById('chat-top-bg-input').click();
+                    break;
+                case 'chat-bottom-bg':
+                    document.getElementById('chat-bottom-bg-input').click();
+                    break;
+                case 'button-back':
+                case 'button-offline':
+                case 'button-settings':
+                case 'button-expand':
+                case 'button-continue':
+                case 'button-send':
+                    document.getElementById('button-icon-input').click();
+                    break;
+                default:
+                    if (currentUploadCallback) {
+                        currentUploadCallback('local');
+                    }
+                    break;
+            }
+        }
+
+        // 🔥【新增】选择URL上传
+        function chooseUrlUpload() {
+            hideModal('image-upload-choice-modal');
+
+            document.getElementById('image-url-input').value = '';
+            document.getElementById('url-preview').style.display = 'none';
+            document.getElementById('url-input-title').textContent = `输入${getUploadTypeTitle(currentUploadType)}URL`;
+            showModal('url-input-modal');
+
+            // 监听URL输入变化
+            const urlInput = document.getElementById('image-url-input');
+            urlInput.oninput = function() {
+                const url = this.value.trim();
+                if (url && isValidImageUrl(url)) {
+                    showUrlPreview(url);
+                } else {
+                    hideUrlPreview();
+                }
+            };
+        }
+
+        // 🔥【新增】获取上传类型标题
+        function getUploadTypeTitle(uploadType) {
+            const titles = {
+                'global-top-app-bar': '顶部应用栏背景',
+                'global-bottom-app-bar': '底部应用栏背景',
+                'global-back-button': '返回按钮',
+                'global-add-button': '添加按钮',
+                'global-bg': '全局背景',
+                'chat-top-bg': '聊天顶部背景',
+                'chat-bottom-bg': '聊天底部背景',
+                'button-back': '返回按钮',
+                'button-offline': '线下模式按钮',
+                'button-settings': '聊天设置按钮',
+                'button-expand': '功能区展开按钮',
+                'button-continue': '续写按钮',
+                'button-send': '发送消息按钮'
+            };
+            return titles[uploadType] || '图片';
+        }
+
+        // 🔥【新增】验证图片URL
+        function isValidImageUrl(url) {
+            try {
+                const urlObj = new URL(url);
+                const supportedDomains = [
+                    'i.postimg.cc',
+                    'files.catbox.moe',
+                    'i.ibb.co',
+                    'i.imgur.com',
+                    'cdn.discordapp.com',
+                    'media.discordapp.net'
+                ];
+
+                // 检查域名是否在支持列表中，或者URL以图片扩展名结尾
+                const domain = urlObj.hostname;
+                const pathname = urlObj.pathname.toLowerCase();
+                const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp'];
+
+                return supportedDomains.includes(domain) ||
+                       imageExtensions.some(ext => pathname.endsWith(ext));
+            } catch {
+                return false;
+            }
+        }
+
+        // 🔥【新增】显示URL预览
+        function showUrlPreview(url) {
+            const preview = document.getElementById('url-preview');
+            const img = document.getElementById('url-preview-img');
+
+            img.onload = function() {
+                preview.style.display = 'block';
+            };
+
+            img.onerror = function() {
+                hideUrlPreview();
+                showToast('图片加载失败，请检查URL是否正确', 'error');
+            };
+
+            img.src = url;
+        }
+
+        // 🔥【新增】隐藏URL预览
+        function hideUrlPreview() {
+            document.getElementById('url-preview').style.display = 'none';
+        }
+
+        // 🔥【新增】确认URL上传
+        function confirmUrlUpload() {
+            const url = document.getElementById('image-url-input').value.trim();
+
+            if (!url) {
+                showToast('请输入图片URL', 'warning');
+                return;
+            }
+
+            if (!isValidImageUrl(url)) {
+                showToast('请输入有效的图片URL', 'warning');
+                return;
+            }
+
+            hideModal('url-input-modal');
+
+            // 处理URL上传
+            handleUrlUpload(url);
+        }
+
+        // 🔥【新增】处理URL上传
+        function handleUrlUpload(url) {
+            switch(currentUploadType) {
+                case 'global-top-app-bar':
+                    customThemeData.globalTopAppBar = url;
+                    updatePreview('global-top-app-bar-preview', url);
+                    updateThemeItemStatus('global-top-app-bar-item', true);
+                    showToast('全局顶部应用栏背景已设置', 'success');
+                    break;
+                case 'global-bottom-app-bar':
+                    customThemeData.globalBottomAppBar = url;
+                    updatePreview('global-bottom-app-bar-preview', url);
+                    updateThemeItemStatus('global-bottom-app-bar-item', true);
+                    showToast('全局底部应用栏背景已设置', 'success');
+                    break;
+                case 'global-back-button':
+                    customThemeData.globalBackButton = url;
+                    updatePreview('global-back-button-preview', url);
+                    updateThemeItemStatus('global-back-button-item', true);
+                    showToast('全局返回按钮样式已设置', 'success');
+                    break;
+                case 'global-add-button':
+                    customThemeData.globalAddButton = url;
+                    updatePreview('global-add-button-preview', url);
+                    updateThemeItemStatus('global-add-button-item', true);
+                    showToast('全局添加按钮样式已设置', 'success');
+                    break;
+                case 'global-bg':
+                    customThemeData.globalBg = url;
+                    updatePreview('global-bg-preview', url);
+                    updateThemeItemStatus('global-bg-item', true);
+                    showToast('全局背景已设置', 'success');
+                    break;
+                case 'chat-top-bg':
+                    customThemeData.chatTopBg = url;
+                    updatePreview('chat-top-bg-preview', url);
+                    updateThemeItemStatus('chat-top-bg-item', true);
+                    showToast('聊天顶部背景已设置', 'success');
+                    break;
+                case 'chat-bottom-bg':
+                    customThemeData.chatBottomBg = url;
+                    updatePreview('chat-bottom-bg-preview', url);
+                    updateThemeItemStatus('chat-bottom-bg-item', true);
+                    showToast('聊天底部背景已设置', 'success');
+                    break;
+                case 'button-back':
+                    customThemeData.buttons.back = url;
+                    updatePreview('back-btn-preview', url);
+                    updateThemeItemStatus('back-btn-item', true);
+                    showToast('返回按钮样式已设置', 'success');
+                    break;
+                case 'button-offline':
+                    customThemeData.buttons.offline = url;
+                    updatePreview('offline-btn-preview', url);
+                    updateThemeItemStatus('offline-btn-item', true);
+                    showToast('线下模式按钮样式已设置', 'success');
+                    break;
+                case 'button-settings':
+                    customThemeData.buttons.settings = url;
+                    updatePreview('settings-btn-preview', url);
+                    updateThemeItemStatus('settings-btn-item', true);
+                    showToast('聊天设置按钮样式已设置', 'success');
+                    break;
+                case 'button-expand':
+                    customThemeData.buttons.expand = url;
+                    updatePreview('expand-btn-preview', url);
+                    updateThemeItemStatus('expand-btn-item', true);
+                    showToast('功能区展开按钮样式已设置', 'success');
+                    break;
+                case 'button-continue':
+                    customThemeData.buttons.continue = url;
+                    updatePreview('continue-btn-preview', url);
+                    updateThemeItemStatus('continue-btn-item', true);
+                    showToast('续写按钮样式已设置', 'success');
+                    break;
+                case 'button-send':
+                    customThemeData.buttons.send = url;
+                    updatePreview('send-btn-preview', url);
+                    updateThemeItemStatus('send-btn-item', true);
+                    showToast('发送消息按钮样式已设置', 'success');
+                    break;
+                default:
+                    if (currentUploadCallback) {
+                        currentUploadCallback('url', url);
+                    }
+                    break;
+            }
         }
 
         // 上传全局顶部应用栏背景
         function uploadGlobalTopAppBar() {
-            document.getElementById('global-top-app-bar-input').click();
+            showImageUploadChoice('global-top-app-bar', '选择顶部应用栏背景来源');
         }
 
         // 上传全局底部应用栏背景
         function uploadGlobalBottomAppBar() {
-            document.getElementById('global-bottom-app-bar-input').click();
+            showImageUploadChoice('global-bottom-app-bar', '选择底部应用栏背景来源');
         }
 
         // 上传全局返回按钮样式
         function uploadGlobalBackButton() {
-            document.getElementById('global-back-button-input').click();
+            showImageUploadChoice('global-back-button', '选择返回按钮样式来源');
         }
 
         // 上传全局添加按钮样式
         function uploadGlobalAddButton() {
-            document.getElementById('global-add-button-input').click();
+            showImageUploadChoice('global-add-button', '选择添加按钮样式来源');
         }
 
         // 上传全局背景
         function uploadGlobalBackground() {
-            document.getElementById('global-bg-input').click();
+            showImageUploadChoice('global-bg', '选择全局背景来源');
         }
 
         // 处理聊天顶部背景上传
@@ -31245,6 +31550,7 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 reader.onload = function(e) {
                     customThemeData.chatTopBg = e.target.result;
                     updatePreview('chat-top-bg-preview', e.target.result);
+                    updateThemeItemStatus('chat-top-bg-item', true);
                     showToast('聊天顶部背景已上传', 'success');
                 };
                 reader.readAsDataURL(file);
@@ -31259,6 +31565,7 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 reader.onload = function(e) {
                     customThemeData.chatBottomBg = e.target.result;
                     updatePreview('chat-bottom-bg-preview', e.target.result);
+                    updateThemeItemStatus('chat-bottom-bg-item', true);
                     showToast('聊天底部背景已上传', 'success');
                 };
                 reader.readAsDataURL(file);
@@ -31273,6 +31580,7 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 reader.onload = function(e) {
                     customThemeData.buttons[currentButtonType] = e.target.result;
                     updatePreview(`${currentButtonType}-btn-preview`, e.target.result);
+                    updateThemeItemStatus(`${currentButtonType}-btn-item`, true);
 
                     const buttonNames = {
                         back: '返回按钮',
@@ -31290,6 +31598,37 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             }
         }
 
+        // 🔥【新增】更新主题项状态
+        function updateThemeItemStatus(itemId, isConfigured) {
+            const item = document.getElementById(itemId);
+            if (!item) return;
+
+            const statusIndicator = item.querySelector('.theme-item-status');
+            if (isConfigured) {
+                item.classList.add('theme-item-configured');
+                if (statusIndicator) {
+                    statusIndicator.style.display = 'flex';
+                }
+            } else {
+                item.classList.remove('theme-item-configured');
+                if (statusIndicator) {
+                    statusIndicator.style.display = 'none';
+                }
+            }
+        }
+
+        // 🔥【新增】清除所有主题项状态（应用后调用）
+        function clearAllThemeItemStatus() {
+            const configuredItems = document.querySelectorAll('.theme-item-configured');
+            configuredItems.forEach(item => {
+                item.classList.remove('theme-item-configured');
+                const statusIndicator = item.querySelector('.theme-item-status');
+                if (statusIndicator) {
+                    statusIndicator.style.display = 'none';
+                }
+            });
+        }
+
         // 处理全局顶部应用栏背景上传
         function handleGlobalTopAppBarUpload(event) {
             const file = event.target.files[0];
@@ -31298,6 +31637,9 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 reader.onload = function(e) {
                     customThemeData.globalTopAppBar = e.target.result;
                     updatePreview('global-top-app-bar-preview', e.target.result);
+                    updateThemeItemStatus('global-top-app-bar-item', true);
+
+                    console.log('🎨 全局顶部应用栏背景已上传:', e.target.result);
                     showToast('全局顶部应用栏背景已上传', 'success');
                 };
                 reader.readAsDataURL(file);
@@ -31312,6 +31654,8 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 reader.onload = function(e) {
                     customThemeData.globalBottomAppBar = e.target.result;
                     updatePreview('global-bottom-app-bar-preview', e.target.result);
+                    updateThemeItemStatus('global-bottom-app-bar-item', true);
+
                     showToast('全局底部应用栏背景已上传', 'success');
                 };
                 reader.readAsDataURL(file);
@@ -31326,6 +31670,8 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 reader.onload = function(e) {
                     customThemeData.globalBackButton = e.target.result;
                     updatePreview('global-back-button-preview', e.target.result);
+                    updateThemeItemStatus('global-back-button-item', true);
+
                     showToast('全局返回按钮样式已上传', 'success');
                 };
                 reader.readAsDataURL(file);
@@ -31340,6 +31686,8 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 reader.onload = function(e) {
                     customThemeData.globalAddButton = e.target.result;
                     updatePreview('global-add-button-preview', e.target.result);
+                    updateThemeItemStatus('global-add-button-item', true);
+
                     showToast('全局添加按钮样式已上传', 'success');
                 };
                 reader.readAsDataURL(file);
@@ -31354,10 +31702,140 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 reader.onload = function(e) {
                     customThemeData.globalBg = e.target.result;
                     updatePreview('global-bg-preview', e.target.result);
+                    updateThemeItemStatus('global-bg-item', true);
+
                     showToast('全局应用背景已上传', 'success');
                 };
                 reader.readAsDataURL(file);
             }
+        }
+
+        // 🔥【修改】保存并应用全局主题 - 使用Dexie
+        async function saveAndApplyGlobalTheme() {
+            try {
+                // 提取全局样式数据
+                const globalThemeData = {
+                    globalTopAppBar: customThemeData.globalTopAppBar,
+                    globalBottomAppBar: customThemeData.globalBottomAppBar,
+                    globalBackButton: customThemeData.globalBackButton,
+                    globalAddButton: customThemeData.globalAddButton,
+                    globalBg: customThemeData.globalBg
+                };
+
+                // 保存到Dexie数据库
+                await db.globalThemes.put({
+                    id: 'global',
+                    themeType: 'global',
+                    themeData: globalThemeData,
+                    timestamp: Date.now()
+                });
+
+                // 立即应用全局样式
+                applyGlobalCustomTheme(globalThemeData);
+
+                console.log('🎨 全局主题已保存并应用到Dexie数据库');
+            } catch (error) {
+                console.error('❌ 保存全局主题失败:', error);
+                showToast('保存全局主题失败', 'error');
+            }
+        }
+
+        // 🔥【修改】应用全局自定义主题 - 使用Dexie
+        async function applyGlobalCustomTheme(globalThemeData = null) {
+            const root = document.documentElement;
+
+            // 如果没有传入数据，从Dexie数据库加载
+            if (!globalThemeData) {
+                try {
+                    const savedGlobalTheme = await db.globalThemes.get('global');
+                    if (savedGlobalTheme && savedGlobalTheme.themeData) {
+                        globalThemeData = savedGlobalTheme.themeData;
+                        console.log('🎨 从Dexie加载保存的全局自定义主题');
+                    } else {
+                        console.log('🎨 没有保存的全局主题');
+                        return;
+                    }
+                } catch (error) {
+                    console.error('❌ 加载全局主题数据失败:', error);
+                    return;
+                }
+            }
+
+            // 清除之前的全局样式
+            clearGlobalCustomTheme();
+
+            // 应用全局样式
+            const appliedGlobalStyles = new Set();
+
+            if (globalThemeData.globalTopAppBar) {
+                root.style.setProperty('--custom-global-top-app-bar', `url(${globalThemeData.globalTopAppBar})`);
+                appliedGlobalStyles.add('top-app-bar');
+                console.log('🎨 设置CSS变量 --custom-global-top-app-bar:', `url(${globalThemeData.globalTopAppBar})`);
+            }
+
+            if (globalThemeData.globalBottomAppBar) {
+                root.style.setProperty('--custom-global-bottom-app-bar', `url(${globalThemeData.globalBottomAppBar})`);
+                appliedGlobalStyles.add('bottom-app-bar');
+            }
+
+            if (globalThemeData.globalBackButton) {
+                root.style.setProperty('--custom-global-back-button', `url(${globalThemeData.globalBackButton})`);
+                appliedGlobalStyles.add('back-button');
+            }
+
+            if (globalThemeData.globalAddButton) {
+                root.style.setProperty('--custom-global-add-button', `url(${globalThemeData.globalAddButton})`);
+                appliedGlobalStyles.add('add-button');
+            }
+
+            if (globalThemeData.globalBg) {
+                root.style.setProperty('--custom-global-bg', `url(${globalThemeData.globalBg})`);
+                appliedGlobalStyles.add('bg');
+            }
+
+            // 为body添加全局样式标记
+            const globalStyleTypes = ['top-app-bar', 'bottom-app-bar', 'back-button', 'add-button', 'bg'];
+            globalStyleTypes.forEach(styleType => {
+                if (appliedGlobalStyles.has(styleType)) {
+                    document.body.setAttribute(`data-has-custom-global-${styleType}`, 'true');
+                } else {
+                    document.body.removeAttribute(`data-has-custom-global-${styleType}`);
+                }
+            });
+
+            // 添加全局主题应用标记
+            document.body.classList.add('custom-theme-applied');
+
+            console.log('🎨 全局自定义主题样式已应用');
+            console.log('🎨 应用的全局样式:', appliedGlobalStyles);
+            console.log('🎨 body类名:', document.body.className);
+            console.log('🎨 body属性:', Array.from(document.body.attributes).map(attr => `${attr.name}="${attr.value}"`));
+        }
+
+        // 🔥【新增】清除全局自定义主题
+        function clearGlobalCustomTheme() {
+            console.log('🎨 开始清除全局自定义主题样式...');
+
+            const root = document.documentElement;
+            const globalVariablesToClear = [
+                '--custom-global-top-app-bar',
+                '--custom-global-bottom-app-bar',
+                '--custom-global-back-button',
+                '--custom-global-add-button',
+                '--custom-global-bg'
+            ];
+
+            globalVariablesToClear.forEach(variable => {
+                root.style.removeProperty(variable);
+            });
+
+            // 清除全局样式标记
+            const globalStyleTypes = ['top-app-bar', 'bottom-app-bar', 'back-button', 'add-button', 'bg'];
+            globalStyleTypes.forEach(styleType => {
+                document.body.removeAttribute(`data-has-custom-global-${styleType}`);
+            });
+
+            console.log('🎨 全局自定义主题样式清除完成');
         }
 
         // 更新预览图
@@ -31485,22 +31963,27 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             });
         });
 
-        // 自定义应用图标
-        function customizeAppIcons() {
-            showToast('应用图标自定义功能开发中...', 'info');
-        }
 
 
 
-        // 重置自定义主题
-        function resetCustomTheme() {
+
+        // 🔥【修改】重置自定义主题 - 改为async支持Dexie
+        async function resetCustomTheme() {
             if (confirm('确定要重置所有自定义设置吗？此操作不可撤销。')) {
                 // 1. 清除已应用的样式
                 clearCustomThemeStyles();
+                clearGlobalCustomTheme(); // 🔥【新增】清除全局主题
                 document.body.classList.remove('custom-theme-applied');
 
-                // 2. 清除localStorage中的数据
-                localStorage.removeItem('customThemeData');
+                // 🔥【修改】2. 清除Dexie数据库中的数据
+                try {
+                    await db.globalThemes.clear();
+                    await db.chatThemes.clear();
+                    await db.themeSettings.clear();
+                    console.log('🧹 已清除Dexie数据库中的主题数据');
+                } catch (error) {
+                    console.error('❌ 清除主题数据失败:', error);
+                }
 
                 // 3. 重置内存中的数据
                 customThemeData = {
@@ -31596,7 +32079,17 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             });
 
             // 临时应用预览主题
-            applyCustomThemeStyles();
+            const previewThemeData = {
+                chatTopBg: customThemeData.chatTopBg,
+                chatBottomBg: customThemeData.chatBottomBg,
+                buttons: { ...customThemeData.buttons },
+                globalTopAppBar: customThemeData.globalTopAppBar,
+                globalBottomAppBar: customThemeData.globalBottomAppBar,
+                globalBackButton: customThemeData.globalBackButton,
+                globalAddButton: customThemeData.globalAddButton,
+                globalBg: customThemeData.globalBg
+            };
+            applyCustomThemeStyles(previewThemeData).catch(e => console.error('预览主题失败:', e));
 
             // 显示预览提示和操作按钮
             showPreviewModal(currentThemeState);
@@ -31639,7 +32132,7 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                     </div>
                     <div class="modal-footer">
                         <button class="modal-button modal-secondary" onclick="cancelPreview()">取消预览</button>
-                        <button class="modal-button modal-primary" onclick="confirmPreview()">应用主题</button>
+                        <button class="modal-button modal-primary" onclick="confirmPreview().catch(e => console.error('应用主题失败:', e))">应用主题</button>
                     </div>
                 </div>
             `;
@@ -31686,15 +32179,15 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             showToast('预览已取消', 'info');
         }
 
-        // 确认预览并应用主题
-        function confirmPreview() {
+        // 🔥【修改】确认预览并应用主题 - 改为async支持Dexie
+        async function confirmPreview() {
             const modal = document.getElementById('theme-preview-modal');
             if (modal) {
                 modal.remove();
             }
 
-            // 直接应用主题（跳过重复的样式应用）
-            applyCustomTheme();
+            // 🔥【修改】直接应用主题（跳过重复的样式应用）
+            await applyCustomTheme();
 
             window.previewState = null;
         }
@@ -31756,31 +32249,40 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             }
         }
 
-        // 应用自定义主题
-        function applyCustomTheme() {
-            // 检查是否有自定义内容
-            const hasCustomContent = customThemeData.chatTopBg ||
-                                    customThemeData.chatBottomBg ||
-                                    Object.values(customThemeData.buttons).some(btn => btn) ||
-                                    customThemeData.globalTopAppBar ||
-                                    customThemeData.globalBottomAppBar ||
-                                    customThemeData.globalBackButton ||
-                                    customThemeData.globalAddButton ||
-                                    customThemeData.globalBg;
+        // 🔥【修改】应用自定义主题 - 改为async支持Dexie
+        async function applyCustomTheme() {
+            // 🔥【修复】分别检查聊天内容和全局内容
+            const hasChatContent = customThemeData.chatTopBg ||
+                                 customThemeData.chatBottomBg ||
+                                 Object.values(customThemeData.buttons).some(btn => btn);
 
-            if (!hasCustomContent) {
+            const hasGlobalContent = customThemeData.globalTopAppBar ||
+                                   customThemeData.globalBottomAppBar ||
+                                   customThemeData.globalBackButton ||
+                                   customThemeData.globalAddButton ||
+                                   customThemeData.globalBg;
+
+            if (!hasChatContent && !hasGlobalContent) {
                 showToast('请先上传自定义内容', 'warning');
                 return;
             }
 
-            // 根据应用范围处理
-            let targetChats = [];
-            if (customThemeData.scope === 'selected') {
-                if (customThemeData.selectedChats.length === 0) {
-                    showToast('请选择要应用的聊天窗口', 'warning');
-                    return;
-                }
-                targetChats = customThemeData.selectedChats;
+            // 🔥【修改】处理全局样式 - 直接应用，不需要选择聊天窗口
+            if (hasGlobalContent) {
+                await saveAndApplyGlobalTheme();
+                console.log('🎨 全局主题已应用到所有应用页面');
+            }
+
+            // 🔥【修复】处理聊天内容 - 只有在有聊天内容时才需要选择聊天窗口
+            if (hasChatContent) {
+                // 根据应用范围处理
+                let targetChats = [];
+                if (customThemeData.scope === 'selected') {
+                    if (customThemeData.selectedChats.length === 0) {
+                        showToast('请选择要应用的聊天窗口', 'warning');
+                        return;
+                    }
+                    targetChats = customThemeData.selectedChats;
             } else if (customThemeData.scope === 'all') {
                 // 获取所有聊天对象ID（包括群聊）
                 const allChatIds = [];
@@ -31804,17 +32306,57 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 targetChats = allChatIds;
             }
 
-            // 先清除旧的主题样式
-            clearCustomThemeStyles();
+                // 🔥【修复】为每个目标聊天窗口保存聊天主题数据（不包含全局样式）
+                const chatThemeDataToSave = {
+                    chatTopBg: customThemeData.chatTopBg,
+                    chatBottomBg: customThemeData.chatBottomBg,
+                    buttons: { ...customThemeData.buttons }
+                };
 
-            // 保存自定义主题数据到localStorage
-            const themeKey = 'customThemeData';
-            localStorage.setItem(themeKey, JSON.stringify(customThemeData));
+                // 🔥【修改】为每个目标聊天窗口保存主题数据到Dexie
+                for (const chatId of targetChats) {
+                    try {
+                        await db.chatThemes.put({
+                            chatId: chatId,
+                            themeData: chatThemeDataToSave,
+                            timestamp: Date.now()
+                        });
+                        console.log(`🎨 为聊天窗口 ${chatId} 保存聊天自定义主题到Dexie`);
+                    } catch (error) {
+                        console.error(`❌ 保存聊天主题失败 (${chatId}):`, error);
+                    }
+                }
 
-            // 应用新的主题样式
-            applyCustomThemeStyles();
+                // 检查当前聊天窗口是否在目标范围内，如果是则立即应用聊天主题
+                if (currentChatCharacter && targetChats.includes(currentChatCharacter.id)) {
+                    applyCustomThemeStyles(chatThemeDataToSave).catch(e => console.error('应用聊天主题失败:', e));
+                    console.log(`🎨 当前聊天窗口 ${currentChatCharacter.id} 在目标范围内，立即应用聊天主题`);
+                }
 
-            showToast(`自定义主题已应用到 ${targetChats.length} 个聊天窗口`, 'success');
+                showToast(`聊天主题已应用到 ${targetChats.length} 个聊天窗口`, 'success');
+            }
+
+            // 🔥【修改】设置自定义主题标记，表示当前使用的是自定义主题 - 使用Dexie
+            try {
+                await db.themeSettings.put({
+                    id: 'selectedTheme',
+                    settingName: 'selectedTheme',
+                    settingValue: 'custom',
+                    timestamp: Date.now()
+                });
+            } catch (error) {
+                console.error('❌ 保存主题设置失败:', error);
+            }
+
+            // 🔥【修复】根据应用的内容显示不同的提示
+            if (hasGlobalContent && !hasChatContent) {
+                showToast('全局主题已应用到所有应用页面', 'success');
+            } else if (hasGlobalContent && hasChatContent) {
+                showToast('全局主题和聊天主题已应用', 'success');
+            }
+
+            // 🔥【新增】清除所有已设置项的状态指示器
+            clearAllThemeItemStatus();
 
             // 返回主题设置页面
             setTimeout(() => {
@@ -31822,74 +32364,97 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             }, 1500);
         }
 
-        // 应用自定义主题样式
-        function applyCustomThemeStyles() {
+        // 🔥【修改】应用聊天自定义主题样式 - 改为async支持Dexie
+        async function applyCustomThemeStyles(themeData = null) {
             const root = document.documentElement;
 
-            // 清除之前的自定义样式
+            // 🔥【修复】清除之前的聊天自定义样式（不影响全局样式）
             clearCustomThemeStyles();
 
+            // 🔥【修改】如果没有传入主题数据，尝试从当前聊天窗口加载 - 使用Dexie
+            if (!themeData && currentChatCharacter) {
+                try {
+                    const savedTheme = await db.chatThemes.where('chatId').equals(currentChatCharacter.id).first();
+                    if (savedTheme && savedTheme.themeData) {
+                        themeData = savedTheme.themeData;
+                        console.log(`🎨 为聊天窗口 ${currentChatCharacter.id} 从Dexie加载自定义主题`);
+                    } else {
+                        console.log(`🎨 聊天窗口 ${currentChatCharacter.id} 没有自定义主题`);
+                        return;
+                    }
+                } catch (error) {
+                    console.error('❌ 加载聊天主题数据失败:', error);
+                    return;
+                }
+            }
+
+            // 如果仍然没有主题数据，退出
+            if (!themeData) {
+                console.log('🎨 没有主题数据可应用');
+                return;
+            }
+
             // 应用聊天界面样式
-            if (customThemeData.chatTopBg) {
-                root.style.setProperty('--custom-chat-top-bg', `url(${customThemeData.chatTopBg})`);
+            if (themeData.chatTopBg) {
+                root.style.setProperty('--custom-chat-top-bg', `url(${themeData.chatTopBg})`);
                 document.body.setAttribute('data-has-chat-top-bg', 'true');
-                console.log('🎨 设置顶部背景:', customThemeData.chatTopBg);
-                console.log('🎨 body类名:', document.body.className);
-                console.log('🎨 data属性:', document.body.getAttribute('data-has-chat-top-bg'));
+                console.log('🎨 设置顶部背景:', themeData.chatTopBg);
             }
 
-            if (customThemeData.chatBottomBg) {
-                root.style.setProperty('--custom-chat-bottom-bg', `url(${customThemeData.chatBottomBg})`);
+            if (themeData.chatBottomBg) {
+                root.style.setProperty('--custom-chat-bottom-bg', `url(${themeData.chatBottomBg})`);
                 document.body.setAttribute('data-has-chat-bottom-bg', 'true');
-                console.log('🎨 设置底部背景:', customThemeData.chatBottomBg);
+                console.log('🎨 设置底部背景:', themeData.chatBottomBg);
             }
 
-            // 应用按钮样式 - 只处理有图片的按钮
-            Object.keys(customThemeData.buttons).forEach(buttonType => {
-                const buttonImage = customThemeData.buttons[buttonType];
-                if (buttonImage && buttonImage.trim() !== '') {
-                    root.style.setProperty(`--custom-${buttonType}-btn`, `url(${buttonImage})`);
-                    // 为特定按钮添加自定义样式类
-                    applyButtonCustomStyle(buttonType, buttonImage);
-                    console.log(`🎨 应用按钮样式: ${buttonType} -> ${buttonImage}`);
+            // 🔥【修复】应用按钮样式 - 只处理有图片的按钮，并添加标记
+            const appliedButtons = new Set();
+            if (themeData.buttons) {
+                Object.keys(themeData.buttons).forEach(buttonType => {
+                    const buttonImage = themeData.buttons[buttonType];
+                    if (buttonImage && buttonImage.trim() !== '') {
+                        root.style.setProperty(`--custom-${buttonType}-btn`, `url(${buttonImage})`);
+                        // 为特定按钮添加自定义样式类
+                        applyButtonCustomStyle(buttonType, buttonImage);
+                        // 添加到已应用列表
+                        appliedButtons.add(buttonType);
+                        console.log(`🎨 应用按钮样式: ${buttonType} -> ${buttonImage}`);
+                    }
+                });
+            }
+
+            // 🔥【修复】为body添加具体的按钮样式标记，用于CSS选择器
+            const buttonTypes = ['back', 'offline', 'settings', 'expand', 'continue', 'send'];
+            buttonTypes.forEach(buttonType => {
+                if (appliedButtons.has(buttonType)) {
+                    document.body.setAttribute(`data-has-custom-${buttonType}-btn`, 'true');
+                } else {
+                    document.body.removeAttribute(`data-has-custom-${buttonType}-btn`);
                 }
             });
 
-            // 应用全局样式
-            if (customThemeData.globalTopAppBar) {
-                root.style.setProperty('--custom-global-top-app-bar', `url(${customThemeData.globalTopAppBar})`);
-            }
+            // 🔥【修复】全局样式处理已移动到 applyGlobalCustomTheme 函数
 
-            if (customThemeData.globalBottomAppBar) {
-                root.style.setProperty('--custom-global-bottom-app-bar', `url(${customThemeData.globalBottomAppBar})`);
-            }
-
-            if (customThemeData.globalBackButton) {
-                root.style.setProperty('--custom-global-back-button', `url(${customThemeData.globalBackButton})`);
-            }
-
-            if (customThemeData.globalAddButton) {
-                root.style.setProperty('--custom-global-add-button', `url(${customThemeData.globalAddButton})`);
-            }
-
-            if (customThemeData.globalBg) {
-                root.style.setProperty('--custom-global-bg', `url(${customThemeData.globalBg})`);
-            }
-
-            // 添加自定义主题应用标记
+            // 添加聊天主题应用标记
             document.body.classList.add('custom-theme-applied');
 
-            console.log('🎨 自定义主题样式已应用');
-            console.log('🎨 最终body类名:', document.body.className);
-            console.log('🎨 最终data属性:', {
-                'data-has-chat-top-bg': document.body.getAttribute('data-has-chat-top-bg'),
-                'data-has-chat-bottom-bg': document.body.getAttribute('data-has-chat-bottom-bg')
-            });
+            // 🔥【修改】只有在没有使用系统主题时才重新应用全局主题样式 - 使用Dexie
+            try {
+                const themeSettingRecord = await db.themeSettings.get('selectedTheme');
+                const currentTheme = themeSettingRecord ? themeSettingRecord.settingValue : null;
+                if (!currentTheme || currentTheme === 'custom') {
+                    await applyGlobalCustomTheme();
+                }
+            } catch (error) {
+                console.error('❌ 应用全局主题失败:', error);
+            }
+
+            console.log('🎨 聊天自定义主题样式已应用');
         }
 
-        // 清除自定义主题样式
+        // 🔥【修复】清除聊天自定义主题样式（不清除全局样式）
         function clearCustomThemeStyles() {
-            console.log('🎨 开始清除自定义主题样式...');
+            console.log('🎨 开始清除聊天自定义主题样式...');
 
             const root = document.documentElement;
             const variablesToClear = [
@@ -31900,12 +32465,8 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                 '--custom-settings-btn',
                 '--custom-expand-btn',
                 '--custom-continue-btn',
-                '--custom-send-btn',
-                '--custom-global-top-app-bar',
-                '--custom-global-bottom-app-bar',
-                '--custom-global-back-button',
-                '--custom-global-add-button',
-                '--custom-global-bg'
+                '--custom-send-btn'
+                // 🔥【修复】不再清除全局样式变量
             ];
 
             // 清除CSS变量
@@ -31917,6 +32478,14 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             // 清除data属性
             document.body.removeAttribute('data-has-chat-top-bg');
             document.body.removeAttribute('data-has-chat-bottom-bg');
+
+            // 🔥【修复】清除聊天按钮样式标记
+            const buttonTypes = ['back', 'offline', 'settings', 'expand', 'continue', 'send'];
+            buttonTypes.forEach(buttonType => {
+                document.body.removeAttribute(`data-has-custom-${buttonType}-btn`);
+            });
+
+            // 🔥【修复】不再清除全局样式标记，保持全局主题生效
 
             // 清除按钮的内联样式
             clearButtonCustomStyles();
@@ -32068,22 +32637,233 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             });
         }
 
-        // 加载保存的自定义主题
-        function loadSavedCustomTheme() {
-            const savedTheme = localStorage.getItem('customThemeData');
-            if (savedTheme) {
+        // 🔥【删除】旧的主题加载函数 - 现在使用Dexie数据库
+        // 主题加载已迁移到数据库升级过程中自动处理
+
+        // 🔥【删除】旧的迁移函数 - 现在在数据库升级中自动处理
+
+        // 🔥【修改】显示主题管理界面 - 使用Dexie
+        async function showThemeManagement() {
+            try {
+                // 获取所有有自定义主题的聊天窗口
+                const themeChats = [];
+                const allChatThemes = await db.chatThemes.toArray();
+
+                // 检查所有角色聊天
+                if (characters && contacts) {
+                    characters.forEach(character => {
+                        if (contacts.includes(character.id)) {
+                            const chatTheme = allChatThemes.find(theme => theme.chatId === character.id);
+                            if (chatTheme) {
+                                themeChats.push({
+                                    id: character.id,
+                                    name: character.name,
+                                    type: 'character',
+                                    themeData: chatTheme.themeData
+                                });
+                            }
+                        }
+                    });
+                }
+
+                // 检查所有群聊
+                if (groupChats) {
+                    groupChats.forEach(group => {
+                        const chatTheme = allChatThemes.find(theme => theme.chatId === group.id);
+                        if (chatTheme) {
+                            themeChats.push({
+                                id: group.id,
+                                name: group.name,
+                                type: 'group',
+                                themeData: chatTheme.themeData
+                            });
+                        }
+                    });
+                }
+
+                if (themeChats.length === 0) {
+                    showToast('没有找到任何自定义主题', 'info');
+                    return;
+                }
+
+            // 创建管理界面
+            const modal = document.createElement('div');
+            modal.className = 'modal phone-modal';
+            modal.style.display = 'flex';
+            modal.style.zIndex = '10000';
+            modal.id = 'theme-management-modal';
+
+            const chatListHtml = themeChats.map(chat => `
+                <div class="theme-chat-item" data-chat-id="${chat.id}">
+                    <div class="theme-chat-info">
+                        <div class="theme-chat-name">${chat.name}</div>
+                        <div class="theme-chat-type">${chat.type === 'group' ? '群聊' : '角色'}</div>
+                    </div>
+                    <div class="theme-chat-actions">
+                        <button class="theme-chat-btn preview-theme-btn" onclick="previewChatTheme('${chat.id}')" title="预览主题">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="theme-chat-btn remove-theme-btn" onclick="removeChatTheme('${chat.id}')" title="移除主题">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">主题管理</h3>
+                        <button class="modal-close" onclick="closeThemeManagement()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="theme-management-info">
+                            <p>找到 ${themeChats.length} 个聊天窗口有自定义主题</p>
+                        </div>
+                        <div class="theme-chat-list">
+                            ${chatListHtml}
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="modal-button modal-secondary" onclick="closeThemeManagement()">关闭</button>
+                        <button class="modal-button modal-danger" onclick="clearAllThemes()">清除所有主题</button>
+                    </div>
+                </div>
+            `;
+
+                document.body.appendChild(modal);
+            } catch (error) {
+                console.error('❌ 显示主题管理界面失败:', error);
+                showToast('加载主题管理界面失败', 'error');
+            }
+        }
+
+        // 🔥【新增】关闭主题管理界面
+        function closeThemeManagement() {
+            const modal = document.getElementById('theme-management-modal');
+            if (modal) {
+                modal.remove();
+            }
+        }
+
+        // 🔥【修改】预览指定聊天窗口的主题 - 使用Dexie
+        async function previewChatTheme(chatId) {
+            try {
+                const chatTheme = await db.chatThemes.where('chatId').equals(chatId).first();
+                if (chatTheme && chatTheme.themeData) {
+                    await applyCustomThemeStyles(chatTheme.themeData);
+
+                    // 找到聊天窗口名称
+                    let chatName = '未知聊天';
+                    if (characters && contacts) {
+                        const character = characters.find(c => c.id === chatId);
+                        if (character && contacts.includes(character.id)) {
+                            chatName = character.name;
+                        }
+                    }
+                    if (groupChats) {
+                        const group = groupChats.find(g => g.id === chatId);
+                        if (group) {
+                            chatName = group.name;
+                        }
+                    }
+
+                    showToast(`正在预览 ${chatName} 的主题`, 'info');
+                } else {
+                    showToast('未找到主题数据', 'error');
+                }
+            } catch (error) {
+                console.error('❌ 预览主题失败:', error);
+                showToast('预览主题失败', 'error');
+            }
+        }
+
+        // 🔥【修改】移除指定聊天窗口的主题 - 使用Dexie
+        async function removeChatTheme(chatId) {
+            try {
+                // 找到聊天窗口名称
+                let chatName = '未知聊天';
+                if (characters && contacts) {
+                    const character = characters.find(c => c.id === chatId);
+                    if (character && contacts.includes(character.id)) {
+                        chatName = character.name;
+                    }
+                }
+                if (groupChats) {
+                    const group = groupChats.find(g => g.id === chatId);
+                    if (group) {
+                        chatName = group.name;
+                    }
+                }
+
+                if (confirm(`确定要移除 ${chatName} 的自定义主题吗？`)) {
+                    await db.chatThemes.where('chatId').equals(chatId).delete();
+
+                    // 如果当前聊天窗口就是被移除主题的窗口，清除样式
+                    if (currentChatCharacter && currentChatCharacter.id === chatId) {
+                        clearCustomThemeStyles();
+                    }
+
+                    showToast(`已移除 ${chatName} 的自定义主题`, 'success');
+
+                    // 刷新管理界面
+                    closeThemeManagement();
+                    setTimeout(() => showThemeManagement().catch(e => console.error('刷新主题管理失败:', e)), 100);
+                }
+            } catch (error) {
+                console.error('❌ 移除主题失败:', error);
+                showToast('移除主题失败', 'error');
+            }
+        }
+
+        // 🔥【修改】清除所有自定义主题 - 使用Dexie
+        async function clearAllThemes() {
+            if (confirm('确定要清除所有聊天窗口的自定义主题吗？此操作不可撤销！')) {
                 try {
-                    customThemeData = JSON.parse(savedTheme);
-                    applyCustomThemeStyles();
+                    // 获取所有聊天主题数量
+                    const allChatThemes = await db.chatThemes.toArray();
+                    const themeCount = allChatThemes.length;
+
+                    // 删除所有聊天主题数据
+                    await db.chatThemes.clear();
+
+                    // 清除当前应用的主题样式
+                    clearCustomThemeStyles();
+
+                    showToast(`已清除 ${themeCount} 个聊天窗口的自定义主题`, 'success');
+
+                    // 关闭管理界面
+                    closeThemeManagement();
                 } catch (error) {
-                    console.error('加载自定义主题失败:', error);
+                    console.error('❌ 清除所有主题失败:', error);
+                    showToast('清除所有主题失败', 'error');
                 }
             }
         }
 
-        // 页面加载时应用保存的自定义主题
-        document.addEventListener('DOMContentLoaded', function() {
-            loadSavedCustomTheme();
+        // 🔥【修改】页面加载时应用保存的主题 - 使用Dexie
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                // 🔥【修改】检查当前选择的主题类型，只在使用自定义主题时才应用
+                const themeSettingRecord = await db.themeSettings.get('selectedTheme');
+                const currentTheme = themeSettingRecord ? themeSettingRecord.settingValue : null;
+
+                if (!currentTheme || currentTheme === 'custom') {
+                    // 没有设置主题或使用自定义主题时，应用自定义主题
+                    await applyGlobalCustomTheme(); // 应用全局主题
+                    console.log('🎨 页面加载时从Dexie应用全局自定义主题');
+                } else {
+                    // 使用系统主题时，应用对应的系统主题
+                    const body = document.body;
+                    body.removeAttribute('data-theme');
+                    if (currentTheme !== 'default') {
+                        body.setAttribute('data-theme', currentTheme);
+                    }
+                    console.log(`🎨 页面加载时应用系统主题: ${currentTheme}`);
+                }
+            } catch (error) {
+                console.error('❌ 页面加载时应用主题失败:', error);
+            }
         });
 
         // 初始化自定义主题界面
@@ -32105,18 +32885,21 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
                     const themeData = JSON.parse(savedTheme);
                     customThemeData = themeData;
 
-                    // 更新预览图
+                    // 更新预览图和状态指示器
                     if (themeData.chatTopBg) {
                         updatePreview('chat-top-bg-preview', themeData.chatTopBg);
+                        updateThemeItemStatus('chat-top-bg-item', true);
                     }
                     if (themeData.chatBottomBg) {
                         updatePreview('chat-bottom-bg-preview', themeData.chatBottomBg);
+                        updateThemeItemStatus('chat-bottom-bg-item', true);
                     }
 
-                    // 更新按钮预览
+                    // 更新按钮预览和状态指示器
                     Object.keys(themeData.buttons).forEach(buttonType => {
                         if (themeData.buttons[buttonType]) {
                             updatePreview(`${buttonType}-btn-preview`, themeData.buttons[buttonType]);
+                            updateThemeItemStatus(`${buttonType}-btn-item`, true);
                         }
                     });
 
@@ -32152,11 +32935,16 @@ async function applyChatBackground(backgroundUrl, skipSave = false) {
             }
         }
 
-        // 加载保存的主题
-        function loadSavedTheme() {
-            const savedTheme = localStorage.getItem('selectedTheme');
-            if (savedTheme && savedTheme !== 'default') {
-                document.body.setAttribute('data-theme', savedTheme);
+        // 🔥【修改】加载保存的主题 - 使用Dexie
+        async function loadSavedTheme() {
+            try {
+                const themeSettingRecord = await db.themeSettings.get('selectedTheme');
+                const savedTheme = themeSettingRecord ? themeSettingRecord.settingValue : null;
+                if (savedTheme && savedTheme !== 'default') {
+                    document.body.setAttribute('data-theme', savedTheme);
+                }
+            } catch (error) {
+                console.error('❌ 加载保存的主题失败:', error);
             }
         }
 
