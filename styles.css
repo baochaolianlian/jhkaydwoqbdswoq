@@ -846,9 +846,446 @@
         body[data-theme="dark"] .chat-input::placeholder {
             color: #888;
         }
-        
 
-        
+        /* 🌙【新增】夜间主题底部应用栏适配 */
+        body[data-theme="dark"] .chat-tabs {
+            background: linear-gradient(180deg, rgba(42, 42, 42, 0.95) 0%, rgba(26, 26, 26, 0.98) 100%);
+            border-top-color: #444;
+        }
+
+        body[data-theme="dark"] .worldbook-tabs {
+            background-color: #2a2a2a;
+            border-top-color: #444;
+        }
+
+        body[data-theme="dark"] .anniversary-tabs {
+            background-color: #2a2a2a;
+            border-top-color: #444;
+        }
+
+        body[data-theme="dark"] .chat-tab,
+        body[data-theme="dark"] .worldbook-tab,
+        body[data-theme="dark"] .anniversary-tab {
+            color: #888;
+        }
+
+        body[data-theme="dark"] .chat-tab.active,
+        body[data-theme="dark"] .worldbook-tab.active,
+        body[data-theme="dark"] .anniversary-tab.active {
+            color: #e0e0e0;
+        }
+
+        /* 🌙【新增】夜间主题API聊天界面顶部状态栏适配 */
+        body[data-theme="dark"] #api-chat-screen .app-status-bar {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        /* 🌙【新增】夜间主题API聊天界面底部输入区域适配 */
+        body[data-theme="dark"] #api-chat-screen .chat-input-area {
+            background-color: #1a1a1a;
+            border-top-color: #444;
+        }
+
+        /* 🌙【新增】夜间主题API聊天界面状态栏信号图标适配 */
+        body[data-theme="dark"] #api-chat-screen .app-status-bar .signal-bar {
+            background-color: #ffffff;
+        }
+
+        /* 🌙【新增】夜间主题API聊天界面电池图标完整适配 */
+        body[data-theme="dark"] #api-chat-screen .app-battery-icon {
+            border-color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-screen .app-battery-icon::after {
+            background-color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-screen .app-battery-level {
+            background-color: #ffffff;
+        }
+
+        /* 🌙【新增】夜间主题API聊天界面header标题栏适配 */
+        body[data-theme="dark"] #api-chat-screen .header {
+            background-color: #1a1a1a;
+            border-bottom-color: #444;
+        }
+
+        /* 🌙【新增】夜间主题API聊天界面标题文字适配 */
+        body[data-theme="dark"] #api-chat-screen .header .app-title,
+        body[data-theme="dark"] #api-chat-screen .header .header-title {
+            color: #ffffff;
+        }
+
+        /* 🌙【新增】夜间主题API聊天界面按钮适配 */
+        body[data-theme="dark"] #api-chat-screen .header .back-btn,
+        body[data-theme="dark"] #api-chat-screen .header .action-btn {
+            color: #ffffff;
+        }
+
+        /* 🌙【新增】夜间主题API聊天界面按钮悬停效果 */
+        body[data-theme="dark"] #api-chat-screen .header .back-btn:hover,
+        body[data-theme="dark"] #api-chat-screen .header .action-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* 🌙【新增】夜间主题聊天设置界面完整适配 */
+        body[data-theme="dark"] #api-chat-settings-screen {
+            background-color: #1a1a1a;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .header {
+            background-color: #1a1a1a;
+            border-bottom-color: #444;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .header .app-title,
+        body[data-theme="dark"] #api-chat-settings-screen .header .header-title {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .header .back-btn,
+        body[data-theme="dark"] #api-chat-settings-screen .header .action-btn {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .settings-container {
+            background-color: #1a1a1a;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .settings-section {
+            background-color: #2a2a2a;
+            border-color: #444;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .setting-item {
+            background-color: #2a2a2a;
+            border-bottom-color: #444;
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .setting-item:hover {
+            background-color: #333;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .setting-left label,
+        body[data-theme="dark"] #api-chat-settings-screen .setting-left .setting-title {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .setting-left .setting-description {
+            color: #cccccc;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .section-header h3 {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .section-header i {
+            color: #4a84c1;
+        }
+
+        /* 🌙【补充】聊天设置界面更多元素的夜间主题适配 */
+        body[data-theme="dark"] #api-chat-settings-screen .app-header {
+            background-color: #1a1a1a;
+            border-bottom-color: #444;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .app-title {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .back-button {
+            color: #ffffff;
+        }
+
+        /* 🌙【优雅修复】聊天设置界面section-header夜间主题适配 */
+        body[data-theme="dark"] #api-chat-settings-screen .settings-section .section-header {
+            background-color: #2a2a2a;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .settings-section .section-title {
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .settings-section .section-icon {
+            color: #4a84c1;
+        }
+
+        /* 🌙【修复】角色列表分组标题夜间主题适配 */
+        body[data-theme="dark"] .group-header {
+            background: linear-gradient(135deg, #2a2a2a 0%, #333333 100%);
+            border-bottom: 1px solid rgba(74, 132, 193, 0.2);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+
+
+        body[data-theme="dark"] .group-title {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .group-count {
+            color: #4a84c1;
+            background: rgba(74, 132, 193, 0.2);
+        }
+
+        body[data-theme="dark"] .group-chevron {
+            color: #4a84c1;
+            background: rgba(74, 132, 193, 0.2);
+        }
+
+        /* 🌙【修复】API聊天界面底部按钮夜间主题适配 */
+        body[data-theme="dark"] .chat-action-btn {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #cccccc;
+        }
+
+        body[data-theme="dark"] .chat-action-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        body[data-theme="dark"] .send-button {
+            background-color: #4a84c1;
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .send-button:hover {
+            background-color: #5a94d1;
+        }
+
+        body[data-theme="dark"] .toggle-tools-btn {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #cccccc;
+        }
+
+        body[data-theme="dark"] .toggle-tools-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* 🌙【修复】"我"页面圆形新建按钮夜间主题适配 */
+        body[data-theme="dark"] .add-persona-btn-header {
+            background: rgba(255, 255, 255, 0.1);
+            color: #4a84c1;
+        }
+
+        body[data-theme="dark"] .add-persona-btn-header:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        body[data-theme="dark"] .add-persona-btn-header:active {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        body[data-theme="dark"] .create-library-btn-header {
+            background: rgba(255, 255, 255, 0.1);
+            color: #4a84c1;
+        }
+
+        body[data-theme="dark"] .create-library-btn-header:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        body[data-theme="dark"] .create-library-btn-header:active {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* 🌙【修复】动态页面发布按钮夜间主题适配 - 顶部标题栏的加号按钮 */
+        body[data-theme="dark"] .add-btn {
+            background: transparent;
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .add-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .section-title {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .setting-card {
+            background-color: #2a2a2a;
+            border-color: #444;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .setting-label {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .setting-desc {
+            color: #cccccc;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .setting-value {
+            color: #cccccc;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .setting-right i {
+            color: #666;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .group-info-card {
+            background-color: #2a2a2a;
+            border-color: #444;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .group-name {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .group-member-count {
+            color: #cccccc;
+        }
+
+        body[data-theme="dark"] #api-chat-settings-screen .group-description {
+            color: #cccccc;
+        }
+
+        /* 🌙【新增】夜间主题短信聊天界面输入栏适配 */
+        body[data-theme="dark"] .sms-input-section {
+            background: rgba(26, 26, 26, 0.9);
+            border-top-color: rgba(68, 68, 68, 0.6);
+        }
+
+        body[data-theme="dark"] .sms-message-input {
+            background: rgba(42, 42, 42, 0.9);
+            border-color: rgba(68, 68, 68, 0.6);
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .sms-message-input::placeholder {
+            color: #999999;
+        }
+
+        body[data-theme="dark"] .sms-attachment-btn,
+        body[data-theme="dark"] .sms-send-btn {
+            background: rgba(42, 42, 42, 0.8);
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .sms-attachment-btn:hover,
+        body[data-theme="dark"] .sms-send-btn:hover {
+            background: rgba(68, 68, 68, 0.8);
+        }
+
+        body[data-theme="dark"] .sms-wait-reply-btn {
+            background: rgba(42, 42, 42, 0.8);
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .sms-wait-reply-btn:hover {
+            background: rgba(68, 68, 68, 0.8);
+        }
+
+        /* 🌙【新增】夜间主题短信消息列表适配 */
+        body[data-theme="dark"] #messages-screen .app-content {
+            background: #1a1a1a;
+        }
+
+        body[data-theme="dark"] .messages-list {
+            background: #1a1a1a;
+        }
+
+        body[data-theme="dark"] .sms-message-item {
+            background: #1a1a1a;
+        }
+
+        body[data-theme="dark"] .sms-message-item:hover {
+            background: #2a2a2a;
+        }
+
+        body[data-theme="dark"] .sms-message-item:not(:last-child)::after {
+            background-color: #444;
+        }
+
+        body[data-theme="dark"] .sms-message-name {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .sms-message-preview {
+            color: #cccccc;
+        }
+
+        body[data-theme="dark"] .sms-message-arrow {
+            color: #666;
+        }
+
+        body[data-theme="dark"] .sms-message-avatar {
+            background: #444;
+        }
+
+        body[data-theme="dark"] .sms-avatar-placeholder {
+            background: #666;
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .messages-empty-state {
+            background: #1a1a1a;
+            color: #cccccc;
+        }
+
+        /* 🌙【新增】夜间主题短信聊天设置界面适配 */
+        body[data-theme="dark"] #sms-chat-settings-screen {
+            background: #1a1a1a;
+        }
+
+        body[data-theme="dark"] #sms-chat-settings-screen .header {
+            background: #1a1a1a;
+            border-bottom-color: #444;
+        }
+
+        body[data-theme="dark"] #sms-chat-settings-screen .header .app-title,
+        body[data-theme="dark"] #sms-chat-settings-screen .header .header-title {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] #sms-chat-settings-screen .header .back-btn,
+        body[data-theme="dark"] #sms-chat-settings-screen .header .action-btn {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .sms-settings-content {
+            background: #1a1a1a;
+        }
+
+        body[data-theme="dark"] .sms-settings-content .setting-group {
+            background: #2a2a2a;
+            border-bottom-color: #444;
+        }
+
+        body[data-theme="dark"] .sms-settings-content .setting-group h4 {
+            background: #333;
+            color: #4a84c1;
+        }
+
+        body[data-theme="dark"] .sms-settings-content .setting-group h4 i {
+            color: #4a84c1;
+        }
+
+        body[data-theme="dark"] .sms-settings-content .setting-item {
+            background: #2a2a2a;
+            border-bottom-color: #444;
+        }
+
+        body[data-theme="dark"] .sms-settings-content .setting-item:hover {
+            background: #333;
+        }
+
+        body[data-theme="dark"] .sms-settings-content .setting-item label {
+            color: #ffffff;
+        }
+
+        body[data-theme="dark"] .sms-settings-content .slider-container input[type="range"] {
+            background: #444;
+        }
+
+        body[data-theme="dark"] .sms-settings-content .slider-container span {
+            color: #4a84c1;
+        }
+
+
         .check-icon {
             color: var(--color-blue);
         }
@@ -2520,6 +2957,38 @@
         .game-chat-message {
             display: flex;
             margin-bottom: 8px;
+            align-items: flex-end;
+            gap: 8px;
+        }
+
+        /* 🔥【新增】游戏聊天头像样式 */
+        .game-chat-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666;
+            flex-shrink: 0;
+            margin-bottom: 2px;
+        }
+
+        .game-chat-message.user .game-chat-avatar {
+            background: #4a90e2;
+            color: white;
+        }
+
+        .game-chat-message.dm .game-chat-avatar {
+            background: #f39c12;
+            color: white;
+        }
+
+        .game-chat-message:not(.user):not(.dm):not(.system) .game-chat-avatar {
+            background: #e74c3c;
+            color: white;
         }
 
         .game-chat-message.user {
@@ -2733,6 +3202,42 @@
             padding: 8px 15px;
             background: #f8f9fa;
             border-bottom: 1px solid #e2e8f0;
+            position: relative;
+        }
+
+        /* 🔥【新增】发言结束按钮样式 */
+        .finish-speaking-btn {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+        }
+
+        .finish-speaking-btn:hover {
+            background: #45a049;
+        }
+
+        .finish-speaking-btn:active {
+            background: #3d8b40;
+        }
+
+        .finish-speaking-btn i {
+            font-size: 14px;
+        }
+
+        .finish-speaking-btn span {
+            font-size: 12px;
         }
 
         .turtle-soup-chat-title {
@@ -2836,6 +3341,115 @@
             background: #ccc;
             cursor: not-allowed;
             transform: none;
+        }
+
+        /* 🔥【新增】海龟汤设置模态框样式 */
+        .turtle-soup-settings-modal {
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .turtle-soup-types {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .turtle-soup-type-option {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .turtle-soup-type-option:hover {
+            border-color: #4caf50;
+            background: rgba(76, 175, 80, 0.05);
+        }
+
+        .turtle-soup-type-option input[type="radio"] {
+            margin-right: 12px;
+            accent-color: #4caf50;
+        }
+
+        .turtle-soup-type-option input[type="radio"]:checked + .type-label {
+            color: #4caf50;
+        }
+
+        .type-label {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .type-label i {
+            font-size: 16px;
+            margin-right: 8px;
+            color: #4caf50;
+        }
+
+        .type-label strong {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .type-label small {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.3;
+        }
+
+        .dm-personality-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .dm-personality-option {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .dm-personality-option:hover {
+            border-color: #4caf50;
+            background: rgba(76, 175, 80, 0.05);
+        }
+
+        .dm-personality-option input[type="radio"] {
+            margin-right: 10px;
+            accent-color: #4caf50;
+        }
+
+        .dm-personality-option span {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .setting-section {
+            margin-bottom: 24px;
+        }
+
+        .setting-section h4 {
+            font-size: 16px;
+            color: #2e7d32;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .setting-section h4 i {
+            color: #4caf50;
         }
         }
 
@@ -3058,12 +3672,44 @@
             top: 25% !important; /* 调整时钟位置 */
         }
 
+        /* 🔥【修改】全屏模式下的时钟样式适配 */
         #phone-screen.fullscreen-mode #main-time {
-            font-size: 64px !important; /* 固定时钟大小 */
+            font-size: 64px !important; /* 默认时钟大小 */
         }
 
         #phone-screen.fullscreen-mode #main-date {
-            font-size: 20px !important; /* 固定日期大小 */
+            font-size: 20px !important; /* 默认日期大小 */
+        }
+
+        /* 全屏模式下的样式变体 */
+        #phone-screen.fullscreen-mode body[data-clock-style="bold"] #main-time {
+            font-size: 68px !important;
+            font-weight: 700 !important;
+        }
+
+        #phone-screen.fullscreen-mode body[data-clock-style="bold"] #main-date {
+            font-size: 22px !important;
+            font-weight: 600 !important;
+        }
+
+        #phone-screen.fullscreen-mode body[data-clock-style="compact"] #main-time {
+            font-size: 58px !important;
+            font-weight: 300 !important;
+        }
+
+        #phone-screen.fullscreen-mode body[data-clock-style="compact"] #main-date {
+            font-size: 18px !important;
+            font-weight: 400 !important;
+        }
+
+        #phone-screen.fullscreen-mode body[data-clock-style="modern"] #main-time {
+            font-size: 72px !important;
+            font-weight: 100 !important;
+        }
+
+        #phone-screen.fullscreen-mode body[data-clock-style="modern"] #main-date {
+            font-size: 24px !important;
+            font-weight: 300 !important;
         }
 
         /* 🔥【固定尺寸】全屏模式下的Dock栏优化 */
@@ -3465,6 +4111,326 @@
         #main-time {
             font-size: 80px;
             font-weight: 200;
+            transition: all 0.3s ease;
+        }
+
+        /* 🔥【新增】时间日期样式变体 */
+
+        /* 默认样式 (已有) */
+        body[data-clock-style="default"] #main-time {
+            font-size: 80px;
+            font-weight: 200;
+        }
+
+        body[data-clock-style="default"] #main-date {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        /* 粗体样式 - 类似iPhone锁屏 */
+        body[data-clock-style="bold"] #main-time {
+            font-size: 84px;
+            font-weight: 700;
+            letter-spacing: -2px;
+        }
+
+        body[data-clock-style="bold"] #main-date {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        /* 紧凑样式 - 类似Android */
+        body[data-clock-style="compact"] #main-time {
+            font-size: 72px;
+            font-weight: 300;
+            line-height: 0.9;
+        }
+
+        body[data-clock-style="compact"] #main-date {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 6px;
+            opacity: 0.9;
+        }
+
+        body[data-clock-style="compact"] #clock-container {
+            margin-bottom: 40px;
+        }
+
+        /* 现代样式 - 类似小米MIUI */
+        body[data-clock-style="modern"] #main-time {
+            font-size: 88px;
+            font-weight: 100;
+            letter-spacing: -3px;
+            line-height: 0.85;
+        }
+
+        body[data-clock-style="modern"] #main-date {
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        body[data-clock-style="modern"] #clock-container {
+            margin-bottom: 60px;
+        }
+
+        /* 🔥【新增】时钟样式选择器样式 */
+        .clock-style-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            background: var(--theme-button-secondary-bg, rgba(255, 255, 255, 0.8));
+            border: 1px solid var(--theme-button-secondary-border, rgba(0, 0, 0, 0.1));
+            border-radius: var(--theme-input-radius, 15px);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 80px;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+
+        .clock-style-selector:hover {
+            background: var(--theme-button-secondary-hover-bg, rgba(255, 255, 255, 0.9));
+        }
+
+        .clock-style-selector #current-clock-style-text {
+            font-size: 13px;
+            color: var(--theme-button-secondary-color, #555);
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .clock-style-selector #clock-style-arrow {
+            font-size: 10px;
+            color: var(--theme-button-secondary-color, #555);
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .clock-style-selector.open #clock-style-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* 🔥【新增】下拉菜单样式 */
+        .clock-style-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            z-index: 1000;
+            background: var(--theme-form-bg, rgba(255, 255, 255, 0.95));
+            border: 1px solid var(--theme-input-border, rgba(0, 0, 0, 0.1));
+            border-radius: var(--theme-input-radius, 15px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            min-width: 200px;
+            margin-top: 4px;
+            overflow: hidden;
+            animation: dropdownFadeIn 0.2s ease;
+        }
+
+        @keyframes dropdownFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .clock-style-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            border-bottom: 1px solid var(--theme-input-border, rgba(0, 0, 0, 0.05));
+        }
+
+        .clock-style-option:last-child {
+            border-bottom: none;
+        }
+
+        .clock-style-option:hover {
+            background: var(--theme-button-secondary-hover-bg, rgba(0, 123, 255, 0.05));
+        }
+
+        .clock-style-option i {
+            font-size: 14px;
+            color: #007bff;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            width: 14px;
+            flex-shrink: 0;
+        }
+
+        .clock-style-option.selected i {
+            opacity: 1;
+        }
+
+        .clock-style-option span {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--theme-text-color, #333);
+            flex: 1;
+        }
+
+        .clock-style-option small {
+            font-size: 12px;
+            color: var(--theme-text-secondary, #666);
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* 🔥【新增】移动端优化 */
+        @media (max-width: 480px) {
+            .clock-style-dropdown {
+                right: -10px;
+                left: -10px;
+                min-width: auto;
+            }
+
+            .clock-style-option {
+                padding: 14px 16px;
+            }
+
+            .clock-style-option span {
+                font-size: 15px;
+            }
+
+            .clock-style-option small {
+                font-size: 13px;
+            }
+        }
+
+        /* 🔥【新增】主屏幕字体选择器样式 */
+        .home-font-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            background: var(--theme-button-secondary-bg, rgba(255, 255, 255, 0.8));
+            border: 1px solid var(--theme-button-secondary-border, rgba(0, 0, 0, 0.1));
+            border-radius: var(--theme-input-radius, 15px);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 80px;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+
+        .home-font-selector:hover {
+            background: var(--theme-button-secondary-hover-bg, rgba(255, 255, 255, 0.9));
+        }
+
+        .home-font-selector #current-home-font-text {
+            font-size: 13px;
+            color: var(--theme-button-secondary-color, #555);
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .home-font-selector #home-font-arrow {
+            font-size: 10px;
+            color: var(--theme-button-secondary-color, #555);
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .home-font-selector.open #home-font-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* 🔥【新增】主屏幕字体下拉菜单样式 */
+        .home-font-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            z-index: 1000;
+            background: var(--theme-form-bg, rgba(255, 255, 255, 0.95));
+            border: 1px solid var(--theme-input-border, rgba(0, 0, 0, 0.1));
+            border-radius: var(--theme-input-radius, 15px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            min-width: 160px;
+            margin-top: 4px;
+            overflow: hidden;
+            animation: dropdownFadeIn 0.2s ease;
+        }
+
+        .home-font-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            border-bottom: 1px solid var(--theme-input-border, rgba(0, 0, 0, 0.05));
+        }
+
+        .home-font-option:last-child {
+            border-bottom: none;
+        }
+
+        .home-font-option:hover {
+            background: var(--theme-button-secondary-hover-bg, rgba(0, 123, 255, 0.05));
+        }
+
+        .home-font-option i {
+            font-size: 14px;
+            color: #007bff;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            width: 14px;
+            flex-shrink: 0;
+        }
+
+        .home-font-option.selected i {
+            opacity: 1;
+        }
+
+        .home-font-option span {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--theme-text-color, #333);
+            flex: 1;
+        }
+
+        .home-font-option small {
+            font-size: 12px;
+            color: var(--theme-text-secondary, #666);
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* 🔥【新增】主屏幕字体移动端优化 */
+        @media (max-width: 480px) {
+            .home-font-dropdown {
+                right: -10px;
+                left: -10px;
+                min-width: auto;
+            }
+
+            .home-font-option {
+                padding: 14px 16px;
+            }
+
+            .home-font-option span {
+                font-size: 15px;
+            }
+
+            .home-font-option small {
+                font-size: 11px;
+            }
         }
         
 
@@ -4336,12 +5302,12 @@
         }
 
         .danger-item {
-            background: #fff5f5;
-            border: 1px solid #fed7d7;
+            background: var(--theme-form-bg, rgba(255, 255, 255, 0.95));
+            border: 1px solid var(--theme-input-border, rgba(0, 0, 0, 0.1));
         }
 
         .danger-item:hover {
-            background: #fef2f2;
+            background: var(--theme-button-secondary-hover-bg, rgba(0, 0, 0, 0.05));
         }
 
 
@@ -9141,190 +10107,67 @@ textarea.call-text-input {
             margin: 0;
             padding: 0;
         }
-        
-        /* 评论对话框样式 */
-        .comments-overlay {
+
+
+
+        /* 🔥【新增】底部固定评论框样式 */
+        .bottom-comment-input {
             position: fixed;
-            top: 0;
+            bottom: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 10000;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-        }
-        
-        .comments-dialog {
-            background: white;
-            border-radius: 15px 15px 0 0;
-            width: 100%;
-            max-width: 450px;
-            max-height: 70vh;
-            display: flex;
-            flex-direction: column;
-            animation: slideUp 0.3s ease-out;
-        }
-        
-        @keyframes slideUp {
-            from { transform: translateY(100%); }
-            to { transform: translateY(0); }
-        }
-        
-        .comments-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        
-        .comments-header span {
-            font-weight: 600;
-            font-size: 16px;
-        }
-        
-        .close-btn {
-            background: none;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            color: #999;
-            padding: 5px;
-        }
-        
-        .comments-list {
-            flex: 1;
-            overflow-y: auto;
-            padding: 10px 20px;
-            max-height: 400px;
-        }
-        
-        .comment-item {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        
-        .comment-avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-        
-        .comment-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .comment-content {
-            flex: 1;
-        }
-        
-        .comment-text {
-            background: #f5f5f5;
+            right: 0;
+            background: #fff;
+            border-top: 1px solid #e5e5e5;
             padding: 8px 12px;
-            border-radius: 12px;
-            margin-bottom: 5px;
-            line-height: 1.4;
-        }
-        
-        .comment-name {
-            color: #576b95;
-            font-weight: 600;
-            margin-right: 5px;
-        }
-        
-        .reply-to {
-            color: #999;
-        }
-        
-        .reply-name {
-            color: #576b95;
-            font-weight: 600;
-        }
-        
-        .comment-actions {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-            font-size: 12px;
-            color: #999;
-            padding-left: 12px;
-        }
-        
-        .comment-time {
-            font-size: 12px;
-            color: #999;
-        }
-        
-        .reply-btn {
-            background: none;
-            border: none;
-            color: #576b95;
-            font-size: 12px;
-            cursor: pointer;
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-        
-        .reply-btn:hover {
-            background: #f0f0f0;
-        }
-        
-        .comments-input {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 20px;
-            border-top: 1px solid #f0f0f0;
-            background: white;
-        }
-        
-        .comments-input input {
-            flex: 1;
-            border: 1px solid #ddd;
-            border-radius: 20px;
-            padding: 8px 15px;
-            font-size: 14px;
-            outline: none;
-        }
-        
-        .comments-input input:focus {
-            border-color: #576b95;
-        }
-        
-        .comments-input button {
-            background: #576b95;
-            color: white;
-            border: none;
-            border-radius: 15px;
-            padding: 8px 16px;
-            font-size: 14px;
-            cursor: pointer;
-        }
-        
-        .comments-input button:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-        
-        .no-comments {
-            text-align: center;
-            color: #999;
-            font-size: 14px;
-            padding: 40px 20px;
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            animation: slideUp 0.3s ease-out;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
-        /* 🔥【新增】评论框滑入动画 */
-        @keyframes slideIn {
+        .bottom-comment-container {
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        #bottom-comment-text {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 14px;
+            outline: none;
+            background: #f8f9fa;
+            margin-right: 8px;
+        }
+
+        .bottom-comment-send {
+            padding: 8px 16px;
+            background: #6B9BD2;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .bottom-comment-send:hover {
+            background: #5A8BC4;
+        }
+
+        .bottom-comment-send:active {
+            transform: scale(0.95);
+        }
+
+        /* 底部评论框滑入动画 */
+        @keyframes slideUp {
             from {
                 opacity: 0;
-                transform: translateY(10px);
+                transform: translateY(100%);
             }
             to {
                 opacity: 1;
@@ -9332,14 +10175,18 @@ textarea.call-text-input {
             }
         }
 
-        /* 🔥【新增】评论框样式优化 */
-        .simple-comment-input {
-            transition: all 0.3s ease;
+        /* 响应式调整 */
+        @media (max-width: 480px) {
+            .bottom-comment-input {
+                padding: 6px 8px;
+            }
+
+            #bottom-comment-text {
+                font-size: 16px; /* 防止iOS缩放 */
+            }
         }
 
-        .simple-comment-input:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
+
         
         /* 选择模式样式 */
         .selection-bar {
@@ -10178,16 +11025,7 @@ textarea.call-text-input {
             box-shadow: 0 1px 3px rgba(0, 122, 255, 0.08);
         }
 
-        .group-header::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(to bottom, #007AFF, #5AC8FA);
-            border-radius: 0 2px 2px 0;
-        }
+
 
 
 
@@ -10929,7 +11767,7 @@ textarea.call-text-input {
         }
         
         .setting-item.danger-item:hover {
-            background-color: #fff5f5;
+            background-color: var(--theme-button-secondary-hover-bg, rgba(0, 0, 0, 0.05));
         }
         
         .setting-left {
@@ -13562,64 +14400,7 @@ textarea.call-text-input {
     line-height: 1.2;
 }
 
-/* 群应用中心 */
-.group-apps-section {
-    background: white;
-    border-radius: 12px;
-    margin: 15px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
 
-.group-apps-section .section-title {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.group-apps-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-}
-
-.app-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 10px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: #f8f9fa;
-}
-
-.app-item:hover {
-    background: #e9ecef;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.app-icon {
-    font-size: 24px;
-    margin-bottom: 8px;
-    color: #007AFF;
-}
-
-.app-name {
-    font-size: 12px;
-    color: #333;
-    font-weight: 500;
-}
-
-/* 特定应用图标颜色 */
-.app-item:nth-child(1) .app-icon { color: #FF9500; } /* 投票 */
-.app-item:nth-child(2) .app-icon { color: #34C759; } /* 群活动 */
-.app-item:nth-child(3) .app-icon { color: #5856D6; } /* 群任务 */
-.app-item:nth-child(4) .app-icon { color: #8E8E93; } /* 更多 */
 
 /* 面具选择界面样式 */
 .persona-selection-item {
@@ -13724,14 +14505,7 @@ textarea.call-text-input {
         gap: 10px;
     }
     
-    .group-apps-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-    }
-    
-    .app-item {
-        padding: 10px 5px;
-    }
+
 }
 
 /* 设置项样式优化 */
@@ -14548,7 +15322,7 @@ textarea.call-text-input {
 
         /* @某人显示样式 */
         .mention-text {
-            color: #007AFF;
+            color: #6b9bd1;
             font-weight: 500;
             text-decoration: none;
         }
@@ -15743,11 +16517,11 @@ textarea.call-text-input {
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6);
         }
 
-        /* 约定优先级角标 - 左下角 */
+        /* 约定优先级角标 - 右下角 */
         .pinned-card-priority-badge {
             position: absolute;
             bottom: 12px;
-            left: 12px;
+            right: 12px;
             font-size: 11px;
             padding: 4px 8px;
             border-radius: 12px;
@@ -15895,7 +16669,25 @@ textarea.call-text-input {
             background: white;
         }
 
-        /* .pinned-card-delete-btn 样式已移除 - 使用长按删除 */
+        .pinned-card-unpin-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .pinned-card-unpin-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
 
         /* 🔥【新增】长按删除视觉反馈 */
         .anniversary-item.long-pressing,
@@ -16094,7 +16886,16 @@ textarea.call-text-input {
             transform: scale(1.1);
         }
 
-        /* .anniversary-delete-btn 样式已移除 - 使用长按删除 */
+        .anniversary-delete-btn {
+            background: #e57373;
+            color: white;
+            border: 1px solid rgba(229, 115, 115, 0.3);
+        }
+
+        .anniversary-delete-btn:hover {
+            background: #ef5350;
+            transform: scale(1.1);
+        }
 
         /* 通用按钮hover效果已移至具体按钮样式中 */
 
@@ -16229,6 +17030,44 @@ textarea.call-text-input {
             color: #721c24;
         }
 
+        /* 🔥【新增】永不过期状态样式 */
+        .appointment-item-status.never-expires {
+            background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+            color: #5e35b1;
+            font-weight: 600;
+        }
+
+        /* 🔥【新增】约定倒计时样式 */
+        .appointment-countdown {
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 10px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .appointment-countdown.pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .appointment-countdown.completed {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .appointment-countdown.overdue {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .appointment-countdown.never-expires {
+            background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+            color: #5e35b1;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
         .appointment-edit-btn {
             background: rgba(0, 0, 0, 0.05);
             border: none;
@@ -16335,22 +17174,35 @@ textarea.call-text-input {
         }
 
         .appointment-complete-btn {
-            background: #4caf50;
+            background: #81c784;
             color: white;
         }
 
         .appointment-edit-btn {
-            background: #007AFF;
+            background: #64b5f6;
             color: white;
         }
 
         .appointment-delete-btn {
-            background: #ff3b30;
+            background: #e57373;
             color: white;
         }
 
         .appointment-action-btn:hover {
             transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .appointment-complete-btn:hover {
+            background: #66bb6a;
+        }
+
+        .appointment-edit-btn:hover {
+            background: #42a5f5;
+        }
+
+        .appointment-delete-btn:hover {
+            background: #ef5350;
         }
 
         /* 角色信息显示样式 */
@@ -19963,13 +20815,15 @@ textarea.call-text-input {
 
 
         .offline-message-content {
-            display: inline-block;
-            max-width: 80%;
+            display: inline-block; /* 🔥【修改】改回inline-block，支持自适应宽度 */
+            max-width: 90%; /* 🔥【修改】最大宽度90%，内容自适应 */
             padding: 12px 16px;
-            border-radius: 18px;
+            border-radius: 12px; /* 🔥【修改】更小的圆角，更对称 */
             font-size: 15px;
             line-height: 1.5;
             word-wrap: break-word;
+            text-align: left; /* 🔥【新增】气泡内文字左对齐 */
+            box-sizing: border-box; /* 🔥【新增】确保padding不影响总宽度 */
         }
 
         /* 🔥【新增】线下模式消息容器支持头像 */
@@ -19982,14 +20836,17 @@ textarea.call-text-input {
             animation: fadeInUp 0.3s ease;
         }
 
+        /* 🔥【重新设计】默认消息布局 */
         .offline-message.user {
-            flex-direction: row; /* 🔥【修正】用户：头像左，气泡右 */
-            text-align: left;
+            flex-direction: row;
+            justify-content: flex-end; /* 🔥【修改】用户消息默认靠右 */
+            text-align: right;
         }
 
         .offline-message.ai {
-            flex-direction: row-reverse; /* 🔥【修正】AI：头像右，气泡左 */
-            text-align: right;
+            flex-direction: row;
+            justify-content: center; /* AI消息默认居中 */
+            text-align: center;
         }
 
         /* 线下模式实际头像样式 */
@@ -20010,17 +20867,44 @@ textarea.call-text-input {
 
         .offline-message.user .offline-message-content {
             /* 背景色由JavaScript动态设置，支持透明度 */
-            color: white;
-            border-bottom-right-radius: 6px;
-            text-align: left; /* 🔥【修复】气泡内文字左对齐 */
+            color: #000000; /* 🔥【修改】用户文字默认为黑色 */
+            /* 🔥【移除】不对称的圆角设置，使用统一的圆角 */
         }
 
         .offline-message.ai .offline-message-content {
             /* 背景色由JavaScript动态设置，支持透明度 */
             color: var(--text-primary);
-            border-bottom-left-radius: 6px;
             border: 1px solid var(--color-gray-border);
-            text-align: left; /* 🔥【确保】气泡内文字左对齐 */
+            /* 🔥【修改】AI消息固定宽度90% */
+            display: block !important;
+            width: 90% !important;
+            max-width: none !important;
+        }
+
+        /* 🔥【简化】折叠内容样式 - 完全透明无装饰 */
+        .offline-message-content details {
+            margin: 0;
+            border: none;
+            background: none;
+        }
+
+        .offline-message-content summary {
+            padding: 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+            user-select: none;
+            list-style: none; /* 移除默认的三角形 */
+            outline: none;
+        }
+
+        .offline-message-content summary::-webkit-details-marker {
+            display: none; /* 移除WebKit浏览器的默认标记 */
+        }
+
+        .offline-message-content details > *:not(summary) {
+            padding: 0;
+            margin: 0;
         }
 
         /* 线下预设模态框样式 */
@@ -21124,7 +22008,7 @@ textarea.call-text-input {
 
         .offline-preview-content {
             display: inline-block;
-            max-width: 80%;
+            max-width: 90%;
             padding: 10px 14px;
             border-radius: 16px;
             font-size: 14px;
@@ -21453,16 +22337,16 @@ textarea.call-text-input {
 
         /* 🔥【真正修复】默认头像位置（侧边显示） */
         .offline-avatar.user-avatar {
-            order: 1; /* 🔥【修正】用户头像在左侧 */
+            order: 2; /* 🔥【修正】用户头像在右侧（配合row） */
         }
 
         .offline-avatar.ai-avatar {
-            order: 2; /* 🔥【修正】AI头像在右侧 */
+            order: 1; /* 🔥【修正】AI头像在左侧（配合row-reverse） */
         }
 
-        /* 默认气泡宽度80% */
+        /* 默认气泡宽度90% */
         .offline-preview-content {
-            max-width: 80% !important;
+            max-width: 90% !important;
         }
 
         /* 隐藏头像的样式 */
@@ -21482,9 +22366,10 @@ textarea.call-text-input {
             max-width: 90% !important;
         }
 
+        /* 用户消息：隐藏AI头像时，用户消息保持在右侧 */
         .offline-message.user.no-ai-avatar,
         .offline-preview-message.user.no-ai-avatar {
-            justify-content: flex-end; /* 保持右对齐 */
+            justify-content: flex-end; /* 🔥【修正】配合row，flex-end让消息在右侧 */
         }
 
         .offline-message.user.no-ai-avatar .offline-message-content,
@@ -21503,9 +22388,10 @@ textarea.call-text-input {
             max-width: 90% !important;
         }
 
+        /* AI消息：隐藏用户头像时，AI消息保持在左侧 */
         .offline-message.ai.no-user-avatar,
         .offline-preview-message.ai.no-user-avatar {
-            justify-content: flex-start; /* 保持左对齐 */
+            justify-content: flex-start; /* 🔥【修正】配合row-reverse，flex-start让消息在左侧 */
         }
 
         .offline-message.ai.no-user-avatar .offline-message-content,
@@ -22888,6 +23774,43 @@ textarea.call-text-input {
         .inner-thoughts-text {
             white-space: pre-wrap;
             word-wrap: break-word;
+        }
+
+        /* 🔥【新增】群聊心声角色信息样式 */
+        .inner-thoughts-character-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .character-mini-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .character-name {
+            font-weight: 600;
+            color: #333;
+            font-size: 15px;
+        }
+
+        /* 可爱主题下的群聊心声样式 */
+        body[data-theme="cute"] .inner-thoughts-character-info {
+            border-bottom-color: rgba(255, 182, 193, 0.3);
+        }
+
+        body[data-theme="cute"] .character-mini-avatar {
+            border-color: rgba(255, 182, 193, 0.5);
+        }
+
+        body[data-theme="cute"] .character-name {
+            color: var(--theme-text-color);
         }
 
         /* 心声刷新按钮 - 位于模态框底部 */
@@ -27405,9 +28328,9 @@ textarea.call-text-input {
         }
 
         .custom-theme-tab.active {
-            color: #007AFF;
-            border-bottom-color: #007AFF;
-            background: rgba(0, 122, 255, 0.05);
+            color: #6699FF;
+            border-bottom-color: #6699FF;
+            background: rgba(102, 153, 255, 0.05);
         }
 
         .custom-theme-tab i {
@@ -27446,7 +28369,7 @@ textarea.call-text-input {
 
         .section-title i {
             margin-right: 8px;
-            color: #007AFF;
+            color: #6699FF;
         }
 
         /* 自定义主题项目 */
@@ -27525,7 +28448,7 @@ textarea.call-text-input {
         }
 
         .theme-item-preview.has-image {
-            border: 2px solid #007AFF;
+            border: 2px solid #6699FF;
         }
 
         .theme-item-preview.has-image i {
@@ -27558,9 +28481,9 @@ textarea.call-text-input {
         }
 
         .theme-scope-option.active {
-            border-color: #007AFF;
-            background: rgba(0, 122, 255, 0.05);
-            color: #007AFF;
+            border-color: #6699FF;
+            background: rgba(102, 153, 255, 0.05);
+            color: #6699FF;
         }
 
         .theme-scope-option i {
@@ -27601,8 +28524,8 @@ textarea.call-text-input {
         }
 
         .chat-selection-item.selected {
-            background: rgba(0, 122, 255, 0.1);
-            border: 1px solid #007AFF;
+            background: rgba(102, 153, 255, 0.1);
+            border: 1px solid #6699FF;
         }
 
         .chat-selection-checkbox {
@@ -27618,8 +28541,8 @@ textarea.call-text-input {
         }
 
         .chat-selection-item.selected .chat-selection-checkbox {
-            background: #007AFF;
-            border-color: #007AFF;
+            background: #6699FF;
+            border-color: #6699FF;
             color: white;
         }
 
@@ -27726,12 +28649,12 @@ textarea.call-text-input {
         }
 
         .apply-btn {
-            background: #007AFF;
+            background: #6699FF;
             color: white;
         }
 
         .apply-btn:hover {
-            background: #0056b3;
+            background: #5588EE;
         }
 
         /* 自定义主题预览样式 */
@@ -27898,7 +28821,7 @@ textarea.call-text-input {
         }
 
         .upload-choice-option:hover {
-            border-color: #007AFF;
+            border-color: #6699FF;
             background-color: #f8f9ff;
         }
 
@@ -27908,7 +28831,7 @@ textarea.call-text-input {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #007AFF;
+            background-color: #6699FF;
             color: white;
             border-radius: 10px;
             margin-right: 15px;
@@ -27953,8 +28876,8 @@ textarea.call-text-input {
 
         #image-url-input:focus {
             outline: none;
-            border-color: #007AFF;
-            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+            border-color: #6699FF;
+            box-shadow: 0 0 0 3px rgba(102, 153, 255, 0.1);
         }
 
         #image-url-input::placeholder {
@@ -28163,7 +29086,7 @@ textarea.call-text-input {
             gap: 8px;
             font-size: 16px;
             font-weight: 600;
-            color: #007AFF;
+            color: #6699FF;
             margin-bottom: 8px;
         }
 
@@ -28199,9 +29122,9 @@ textarea.call-text-input {
         }
 
         .preview-action-btn:hover {
-            border-color: #007AFF;
-            background: rgba(0, 122, 255, 0.05);
-            color: #007AFF;
+            border-color: #6699FF;
+            background: rgba(102, 153, 255, 0.05);
+            color: #6699FF;
         }
 
         .preview-action-btn i {
@@ -28251,7 +29174,7 @@ textarea.call-text-input {
 
         .theme-chat-item:hover {
             background: #f8f9fa;
-            border-color: #007AFF;
+            border-color: #6699FF;
         }
 
         .theme-chat-info {
@@ -28291,12 +29214,12 @@ textarea.call-text-input {
         }
 
         .preview-theme-btn {
-            background: #007AFF;
+            background: #6699FF;
             color: white;
         }
 
         .preview-theme-btn:hover {
-            background: #0056b3;
+            background: #5588EE;
             transform: scale(1.05);
         }
 
@@ -28311,11 +29234,11 @@ textarea.call-text-input {
         }
 
         .theme-action-btn.manage-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #f8f9fa;
+            color: #666;
         }
 
         .theme-action-btn.manage-btn:hover {
-            background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+            background: #e9ecef;
             transform: translateY(-2px);
         }
